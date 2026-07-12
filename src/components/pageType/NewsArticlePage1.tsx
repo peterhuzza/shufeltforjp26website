@@ -1,0 +1,51 @@
+import React from 'react';
+import Link from 'next/link';
+import ArticleHeader from '@/components/article/ArticleHeader';
+import ArticleContent from '@/components/mdfield';
+import ArticleSummary from '@/components/article/ArticleSummary';
+import Button from '@/components/subcomponents/buttons/button';
+
+interface NewsArticlePageProps {
+  articleTitle: string;
+  publishDate: string;
+  articleSummary: string;
+  // FIX: Allow string OR string[] so GenPage data passes through
+  articleContent: string | string[];
+  backLinkText: string;
+}
+
+export default function NewsArticlePage1({
+  articleTitle,
+  publishDate,
+  articleSummary,
+  articleContent,
+  backLinkText,
+}: NewsArticlePageProps) {
+
+  return (
+    // 1. Added 'flex' here so 'flex-col' and 'items-center' actually work
+    <main className="flex flex-col min-h-screen bg-white py-20 px-6 items-center ">
+      <ArticleHeader title={articleTitle} date={publishDate} />
+
+      {/* 2. Added 'w-full' and 'mx-auto', removed broken flex classes */}
+      <div className="w-full max-w-3xl mx-auto border-t-2 border-t-inferno pt-8">
+        <ArticleContent content={articleContent} />
+      </div>
+
+      {/* This bottom div was already set up correctly! */}
+      <div className="w-full max-w-3xl mx-auto mt-16 pt-8 border-t-2 border-t-inferno flex justify-between items-center">
+        <Button
+          href="/news"
+          className="inline-flex items-center px-3 py-1 text-white text-xs font-bold shadow-sm transition"
+          variant="secondary"
+        >
+          <span className="mr-1 py-2 text-md">&larr;</span>
+          {backLinkText || "Back to News"}
+        </Button>
+        <div className="flex gap-4">
+          <Link href={"none"} className="text-black text-sm hover:text-inferno transition ">Share this article</Link>
+        </div>
+      </div>
+    </main>
+  );
+}
