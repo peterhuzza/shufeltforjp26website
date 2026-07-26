@@ -10,48 +10,18 @@ export const metadata: Metadata = {
 
 export default function GenPage() {
   const props = {
-  "pageTitle": "Announcements",
-  "pageSubtitle": "",
-  "pageImage": "/",
-  "items": [
-    {
-      "key": "test-article",
-      "linkHref": "/news/test-article",
-      "title": "test article",
-      "date": "today",
-      "summary": "this is a test ya ya ya"
-    },
-    {
-      "key": "another-article",
-      "linkHref": "/news/another-article",
-      "title": "another article",
-      "date": "nottoday",
-      "summary": "this is another summery"
-    },
-    {
-      "key": "michale-jackson",
-      "linkHref": "/news/michale-jackson",
-      "title": "michael jackson",
-      "date": "2026",
-      "summary": "michle rocks"
-    },
-    {
-      "key": "michael-jackson",
-      "linkHref": "/news/michael-jackson",
-      "title": "michael jackson",
-      "date": "2026",
-      "summary": "michael rocks"
-    }
-  ],
-  "candidateName": "canidate",
-  "campaignName": "campaign",
-  "email": "jamesshufelt@gmail.com",
-  "facebookUrl": "test",
-  "instagramUrl": "test",
-  "tiktokUrl": "test",
-  "blueskyUrl": "blueksystuff",
-  "twitterUrl": "test",
-  "volunteerUrl": "test"
+  "pageTitle": "Announcements from the Transition",
+  "pageSubtitle": "Press Room",
+  "items": [],
+  "candidateName": "Jane Doe",
+  "campaignName": "Jane for Council",
+  "email": "",
+  "facebookUrl": "",
+  "instagramUrl": "",
+  "tiktokUrl": "",
+  "blueskyUrl": "",
+  "twitterUrl": "",
+  "volunteerUrl": ""
 };
   return <NewsPage1 {...props} />;
 }
