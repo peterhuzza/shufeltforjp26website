@@ -11,6 +11,22 @@ This architecture means the entire site structure is managed via the configurato
 - **Deployment**: Nginx
 - **Scripts**: Makefile
 
+## Tech Stack
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS (v4)
+- **Containerization**: Docker & Docker Compose
+- **Deployment**: vercel or github pages read socs/architecture/deployment.md
+- **Scripts**: Makefile
+
+## Requirements
+- **Node.js**: v18.17.0 or higher
+- **npm** or **yarn**
+- **Docker** & **Docker Compose** (Optional, but recommended for consistent development)
+- **Git**
+
+
+
 ## Key Features
 - **Dynamic Routing**: Use the configurator to make, delete, or swap routes instantly.
 - **Composable Architecture**: Easily swap out sections and layouts without manual file management in `src/app`.
