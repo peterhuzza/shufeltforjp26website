@@ -7,31 +7,32 @@
 ### 1. The Interface is the Contract
 The most critical element for "vibe coding" to work with our configurator is the **TypeScript Interface**.
 - When adding a new feature or page type, always define a clear `interface` for the props. These define the pieces of content on your page, such as image names or raw text content.
-- The AI uses these interfaces to build both the components and the data entry logic.
-- If the interface is correct, the configurator picks it up dynamically in the page builder. After editing a component, simply press the refresh button, and the interface will appear in the configurator.
+- The configurator uses these interfaces to build both the components and the data entry logic.
+- If the interface is correct, the configurator picks it up dynamically in the page builder tab. After editing a component, simply press the refresh button, and the interface will appear in the configurator.
 
 ### 2. Pattern Matching & Context Management
-The AI is highly capable of mimicking the existing style. To get the best "vibe":
-- **Provide Context**: Point the AI to existing components (e.g., "Build this like `HomePage1`").
-- **Keep Components Granular**: To keep context small and efficient (especially for smaller on-device models), avoid putting all custom components into a single Page Type file in `src/components/`.
-- **Split Components**: Instead of creating an entire page in one file, split it into smaller, modular components.
+"AI can be great for prototyping it genrally follows a single styling which sucks but thats why you should design things one at a time "vibe coding" should essentially feel like taking a piece of clay and slowly molding the output into the final product
+- **Provide Context**: Point the AI to components if you are starting a new feature or a new chat generally then
+AI should keep track if it builds componets but it might be cheaper to have it build in the page and then you
+split them out to sep files ex (e.g., "like how you would in `HomePage1`").
+- **try to Keep Components Granular**: To keep context small and efficient (especially for smaller on-device models like Gemma 12B), avoid putting all custom components into a single Page Type file in `src/components/`. 
+- **Split Components**: when prototyping you can prototype in the component or page and, split it into smaller,
+modular components. so that when you start a new feature or new chat it can work with the code
+
 
 ### 3. Component Composition
-Avoid monolithic pages by embracing the existing modularity:
-This is mostly for the AI but by
+Avoid monolithic pages by embracing the existing modularity. This is particularly helpful when working with agents to keep context small:
 - Build small, reusable sub-components in `src/components/subcomponents/`.
 - Compose these into larger sections in `src/components/Midsection/` or `src/components/HeroSection/`.
 - Finally, assemble these sections into "Page Types" in `src/components/pageType/`.
-this can help when working with agents to keep context small when working with models 
-and this esp makes a diff for on device models gemma 12b ect. 
 
 ### 4. AI Workflow for New Features
 To vibe code a new feature efficiently:
-1.  **Contextualize**: Tell the AI what you want to build it can help to show it it 1-2 relevant files but we want to keep the context small so if you are using an agent your agent should read the file add parts of the file that you want the agent to focus on rather than the entire file.
+1.  **Contextualize**: Describe what you want to build. If using an agent, provide only the relevant snippets of files the agent needs to focus on rather than the entire file to keep the context window clean.
 2.  **Define the Shape**: Ask the AI to define the `interface` first. Review and approve the data shape.
 3.  **Generate**: Let the AI build the component using that interface.
 4.  **Verify**: Check that the component renders correctly and that the props match the interface.
-5  **Set your expectations**: esp when working with smaller models you should keep your code clean and really follow the guidelines from above you can prototype pretty easily and do all the boring stuff ( centering the div setting the layout ect ) and focus on how you want the site to look but you should really guide torwawards keeping things clean and sep your tokens will thank me
+5.  **Set Expectations**: Especially with smaller models, keep your code clean and follow the guidelines above. You can prototype quickly and let the AI handle the "boring stuff" (like centering divs or setting up layouts), but guide it to keep the code clean and separated. Your tokens (and your sanity) will thank you.
 
 ## Why this works
 By following these guidelines, you allow the AI to handle the heavy lifting of boilerplate and styling while you maintain control over the "vibe"—the actual functionality and user experience. 
