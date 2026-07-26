@@ -19,7 +19,6 @@ split them out to sep files ex (e.g., "like how you would in `HomePage1`").
 - **Split Components**: when prototyping you can prototype in the component or page and, split it into smaller,
 modular components. so that when you start a new feature or new chat it can work with the code
 
-
 ### 3. Component Composition
 Avoid monolithic pages by embracing the existing modularity. This is particularly helpful when working with agents to keep context small:
 - Build small, reusable sub-components in `src/components/subcomponents/`.
