@@ -18,16 +18,20 @@ The AI is highly capable of mimicking the existing style. To get the best "vibe"
 
 ### 3. Component Composition
 Avoid monolithic pages by embracing the existing modularity:
+This is mostly for the AI but by
 - Build small, reusable sub-components in `src/components/subcomponents/`.
 - Compose these into larger sections in `src/components/Midsection/` or `src/components/HeroSection/`.
 - Finally, assemble these sections into "Page Types" in `src/components/pageType/`.
+this can help when working with agents to keep context small when working with models 
+and this esp makes a diff for on device models gemma 12b ect. 
 
 ### 4. AI Workflow for New Features
 To vibe code a new feature efficiently:
-1.  **Contextualize**: Describe what you want to build and show the AI 1-2 relevant files.
+1.  **Contextualize**: Tell the AI what you want to build it can help to show it it 1-2 relevant files but we want to keep the context small so if you are using an agent your agent should read the file add parts of the file that you want the agent to focus on rather than the entire file.
 2.  **Define the Shape**: Ask the AI to define the `interface` first. Review and approve the data shape.
 3.  **Generate**: Let the AI build the component using that interface.
 4.  **Verify**: Check that the component renders correctly and that the props match the interface.
+5  **Set your expectations**: esp when working with smaller models you should keep your code clean and really follow the guidelines from above you can prototype pretty easily and do all the boring stuff ( centering the div setting the layout ect ) and focus on how you want the site to look but you should really guide torwawards keeping things clean and sep your tokens will thank me
 
 ## Why this works
 By following these guidelines, you allow the AI to handle the heavy lifting of boilerplate and styling while you maintain control over the "vibe"—the actual functionality and user experience. 
