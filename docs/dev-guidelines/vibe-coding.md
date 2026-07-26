@@ -11,13 +11,12 @@ The most critical element for "vibe coding" to work with our configurator is the
 - If the interface is correct, the configurator picks it up dynamically in the page builder tab. After editing a component, simply press the refresh button, and the interface will appear in the configurator.
 
 ### 2. Pattern Matching & Context Management
-"AI can be great for prototyping it genrally follows a single styling which sucks but thats why you should design things one at a time "vibe coding" should essentially feel like taking a piece of clay and slowly molding the output into the final product
-- **Provide Context**: Point the AI to components if you are starting a new feature or a new chat generally then
-AI should keep track if it builds componets but it might be cheaper to have it build in the page and then you
-split them out to sep files ex (e.g., "like how you would in `HomePage1`").
-- **try to Keep Components Granular**: To keep context small and efficient (especially for smaller on-device models like Gemma 12B), avoid putting all custom components into a single Page Type file in `src/components/`. 
-- **Split Components**: when prototyping you can prototype in the component or page and, split it into smaller,
-modular components. so that when you start a new feature or new chat it can work with the code
+AI excels at prototyping by following established styles, but it can lose focus if the context is too large. Think of "vibe coding" as taking a piece of clay and slowly molding it into the final product.
+
+- **Provide Context**: Start new features or chats by pointing the AI to existing components (e.g., "Build this like `HomePage1`"). 
+- **Strategic Development**: While the AI can build components directly in a page during prototyping, it is often more efficient to build them as separate files and then split them out to maintain a clean project structure.
+- **Keep Components Granular**: To keep context small and efficient (especially for smaller on-device models like Gemma 12B), avoid putting all custom components into a single Page Type file in `src/components/`. 
+- **Split Components**: When prototyping, you can work within a single component or page, but ultimately split it into smaller, modular components so that subsequent chats can work with the code more effectively.
 
 ### 3. Component Composition
 Avoid monolithic pages by embracing the existing modularity. This is particularly helpful when working with agents to keep context small:
