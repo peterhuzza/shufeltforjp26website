@@ -56,17 +56,10 @@ export default function Home({ aboutMe, midsectionContent }: HomeProps) {
   // The component now relies on 'aboutMe' and 'midsectionContent' passed in as props.
 
   return (
-    <main className="flex-grow">
-
-      {/* Hero Section with Circular Headshot */}
-      <div></div>
-
-      {/* 1.5 QUICK LINKS (Optional) */}
-      {/* <QuickLinksSection /> */}
-
-      {/* 1.7 NEW: LANDSCAPE IMAGE BANNER */}
-
-      <div>
+    <main className="items-center justify-center ">
+      <div className='items-flex`'>
+        <div></div>
+        <div></div>
       </div>
     </main>
   );

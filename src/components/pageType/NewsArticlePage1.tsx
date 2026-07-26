@@ -27,7 +27,7 @@ export default function NewsArticlePage1({
     <main className="flex flex-col min-h-screen bg-white py-20 px-6 items-center ">
       <ArticleHeader title={articleTitle} date={publishDate} />
 
-      {/* 2. Added 'w-full' and 'mx-auto', removed broken flex classes */}
+      {/* 2. Addedw-full' and 'mx-auto', removed broken flex classes */}
       <div className="w-full max-w-3xl mx-auto border-t-2 border-t-inferno pt-8">
         <ArticleContent content={articleContent} />
       </div>
