@@ -17,6 +17,7 @@ import Midsection from "@/components/Midsection/midsection2";
  *
  */
 interface AboutMeData {
+  moto: string;
   backgroundSrc: string;
   //test
   imageSrc: string;
@@ -59,6 +60,8 @@ export default function Home({ aboutMe, midsectionContent }: HomeProps) {
 
       {/* Hero Section with Circular Headshot */}
       <BannerAboutMe
+        moto={aboutMe.moto}
+
         backgroundSrc={aboutMe.backgroundSrc}
         imageSrc={aboutMe.imageSrc}
         altText={aboutMe.altText}
