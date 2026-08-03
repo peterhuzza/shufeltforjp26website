@@ -1,6 +1,6 @@
 import React from 'react';
 import NextImage, { StaticImageData } from 'next/image';
-import Button from "@/components/subcomponents/buttons/button";
+import Button from "@/components/buttons/button";
 
 interface AboutMeProp {
   moto: string;

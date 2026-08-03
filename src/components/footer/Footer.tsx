@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaEnvelope, FaBluesky } from 'react-icons/fa6';
-import Button from "@/components/subcomponents/buttons/button"
+import Button from "@/components/buttons/button"
 import { Twinkle_Star } from 'next/font/google';
 
 interface FooterProps {

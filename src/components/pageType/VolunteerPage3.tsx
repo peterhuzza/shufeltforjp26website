@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from "@/components/subcomponents/buttons/button";
+import Button from "@/components/buttons/button";
 import Image from 'next/image';
 
 interface VolunteerPageProps {

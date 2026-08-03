@@ -1,5 +1,5 @@
 import React from "react";
-import RightAjPic from "@/components/subcomponents/imageFrames/RightAlPic";
+import RightAjPic from "@/components/imageFrames/RightAlPic";
 import LeftAlText from "@/components/subcomponents/LeftAlText";
 
 interface AboutPageProps {

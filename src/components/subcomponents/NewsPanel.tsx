@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Button from '@/components/subcomponents/buttons/button'
+import Button from '@/components/buttons/button'
 
 // Exporting this interface allows other components (and the Builder) to know what data structure to use.
 export interface NewsItemData {

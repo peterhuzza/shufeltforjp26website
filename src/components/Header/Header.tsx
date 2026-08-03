@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
-import Button from "@/components/subcomponents/buttons/button";
+import Button from "@/components/buttons/button";
 
 interface HeaderProps {
   navLinks: Record<string, string>;

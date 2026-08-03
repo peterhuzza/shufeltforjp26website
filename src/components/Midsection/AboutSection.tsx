@@ -1,5 +1,5 @@
 import React from 'react';
-import MarkdownField from '@/components/mdfield'
+import MarkdownField from '@/components/text/mdfield'
 // Define the shape of the data this component expects
 interface AboutSectionProps {
   title: string;

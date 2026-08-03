@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutSection from "@/components/Midsection/AboutSection";
-import Button from "@/components/subcomponents/buttons/button";
+import Button from "@/components/buttons/button";
 import Image, { StaticImageData } from 'next/image';
 // Expanded interface to cover ALL text content on the page
 interface VolunteerPageProps {

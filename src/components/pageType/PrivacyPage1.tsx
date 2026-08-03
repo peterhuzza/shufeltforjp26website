@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Button from '../subcomponents/buttons/button';
+import Button from '@/components/buttons/button';
 
 // Define the shape of the data coming in
 interface PrivacyPageProps {
