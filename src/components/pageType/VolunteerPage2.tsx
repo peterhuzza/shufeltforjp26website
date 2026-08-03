@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutSection from "@/components/Midsection/AboutSection";
+import AboutSection from "@/components/midsection/AboutSection";
 import Button from "@/components/buttons/button";
 import Image, { StaticImageData } from 'next/image';
 
