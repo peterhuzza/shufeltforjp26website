@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import ArticleHeader from '@/components/article/ArticleHeader';
-import ArticleContent from '@/components/mdfield';
+import ArticleContent from '@/components/text/mdfield';
 import ArticleSummary from '@/components/article/ArticleSummary';
 import Button from '@/components/buttons/button';
 
