@@ -44,8 +44,8 @@ const Button: React.FC<ButtonProps> = ({
       after:pointer-events-none
       hover:shadow-xl hover:-translate-y-0.5
     `,
-    mobile: "p-2 text-brand-blue2 hover:bg-plat transition-colors",
-    outline: "border-2 border-brand-blue text-brand-blue hover:bg-brand-blue/5 focus:ring-brand-blue",
+    mobile: "p-2 text-brand-color2 hover:bg-plat transition-colors",
+    outline: "border-2 border-brand-color text-brand-blue hover:bg-brand-blue/5 focus:ring-brand-blue",
     danger: `
       bg-gradient-to-b from-btn-base-start-danger to-btn-base-end-danger 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 

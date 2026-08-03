@@ -27,7 +27,7 @@ export default function NewsPage1({
 }: NewsPageProps) {
   console.log("Current Image URL:", pageImage);
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-brand-color2">
       {/* 1. Header Section */}
       <div className="bg-[#444444] relative w-full py-16 px-6 text-center border-b-2 border-inferno overflow-hidden">
         <Image

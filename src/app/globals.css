@@ -3,57 +3,57 @@
 @theme {
   /* This maps your utility classes directly */
   /* Usage: bg-brand-color1, text-brand-color1 */
-  --color-brand-color1: #4E3B31;
-  --color-brand-color2: #8C7361;
-  --color-imperial-blue: #3D2B1F;
-  --color-plat: #E5D3B3;
-  --color-inferno: #A67C52;
+  --color-brand-color1: #2A2B2A;
+  --color-brand-color2: #F8F4E3;
+  --color-imperial-blue: #2A2B2A;
+  --color-plat: #F8F4E3;
+  --color-inferno: #E5446D;
 
-  --color-instagram: #7D6B5D;
-  --color-facebook: #8C7361;
-  --color-tiktok: #5C4033;
-  --color-mail: #4E3B31;
+  --color-instagram: #FF2252;
+  --color-facebook: #E5446D;
+  --color-tiktok: #706C61;
+  --color-mail: #2A2B2A;
 
-  --color-btn-base-start-primary: #8C7361;   
-  --color-btn-base-end-primary: #4E3B31;          
-  --color-btn-hover-start-primary: #A67C52;   
-  --color-btn-hover-end-primary: #5C4033; 
-  --color-btn-highlight-primary: #F5F5DC;        
+  --color-btn-base-start-primary: #E5446D;   
+  --color-btn-base-end-primary: #FF2252;          
+  --color-btn-hover-start-primary: #FF2252;   
+  --color-btn-hover-end-primary: #E5446D; 
+  --color-btn-highlight-primary: #F8F4E3;        
 
-  --color-btn-base-start-secondary: #5C4033;   
-  --color-btn-base-end-secondary: #3D2B1F;          
-  --color-btn-hover-start-secondary: #8C7361;   
-  --color-btn-hover-end-secondary: #4E3B31; 
-  --color-btn-highlight-secondary: #F5F5DC;
+  --color-btn-base-start-secondary: #706C61;   
+  --color-btn-base-end-secondary: #2A2B2A;          
+  --color-btn-hover-start-secondary: #2A2B2A;   
+  --color-btn-hover-end-secondary: #706C61; 
+  --color-btn-highlight-secondary: #F8F4E3;
 
-  --color-btn-base-start-mobile: #8C7361;   
-  --color-btn-base-end-mobile: #4E3B31;          
-  --color-btn-hover-start-mobile: #A67C52;   
-  --color-btn-hover-end-mobile: #5C4033; 
-  --color-btn-highlight-mobile: #F5F5DC;
+  --color-btn-base-start-mobile: #E5446D;   
+  --color-btn-base-end-mobile: #FF2252;          
+  --color-btn-hover-start-mobile: #FF2252;   
+  --color-btn-hover-end-mobile: #E5446D; 
+  --color-btn-highlight-mobile: #F8F4E3;
 
-  --color-btn-base-start-danger: #722F37;   
-  --color-btn-base-end-danger: #3E1E1E;
-  --color-btn-hover-start-danger: #8B3E3E;   
-  --color-btn-hover-end-danger: #5E2D2D; 
-  --color-btn-highlight-danger: #ffffff; 
-  --color-btn-base-danger2: #5D4037;
-  --color-btn-hover-danger2: #795548;
-  --color-btn-curve-danger2: #8D6E63;
-  --color-btn-curve-danger2-hover: #9E7E73;
+  --color-btn-base-start-danger: #FF2252;   
+  --color-btn-base-end-danger: #2A2B2A;
+  --color-btn-hover-start-danger: #E5446D;   
+  --color-btn-hover-end-danger: #FF2252; 
+  --color-btn-highlight-danger: #F8F4E3; 
+  --color-btn-base-danger2: #2A2B2A;
+  --color-btn-hover-danger2: #706C61;
+  --color-btn-curve-danger2: #E5446D;
+  --color-btn-curve-danger2-hover: #FF2252;
 }
 
 /* Standard CSS variables for non-Tailwind usage (optional but good for consistency) */
 :root {
-  --background: #F5F5DC;
-  --foreground: #3D2B1F;
+  --background: #F8F4E3;
+  --foreground: #2A2B2A;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #3D2B1F;
+    --background: #2A2B2A;
     /* Keeping light mode preference per your design */
-    --foreground: #F5F5DC;
+    --foreground: #F8F4E3;
   }
 }
 

@@ -12,7 +12,7 @@ export interface NewsItemData {
 
 export default function NewsPanel({ date, title, summary, linkHref }: NewsItemData) {
   return (
-    <div className="flex flex-col h-full border border-gray-200 p-6 bg-white shadow-sm">
+    <div className="flex flex-col h-full border border-gray-200 p-6 bg-color2 shadow-sm">
       <div className="flex flex-col h-full">
 
         {/* Date Tag */}

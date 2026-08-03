@@ -14,8 +14,7 @@ export default function Midsection({
 }: MidsectionProps) {
   return (
     <div className="w-full">
-      <section className="relative w-full md:min-h-[75vh] flex flex-col">
-
+      <section className="relative w-full md:min-h-[75vh] flex flex-col bg-brand-color2">
         {/* flex-col (Mobile): Stacks elements vertically
           md:flex-row (Desktop): Places them side-by-side 
         */}
