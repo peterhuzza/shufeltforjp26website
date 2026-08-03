@@ -1,6 +1,6 @@
 "use client";
 
-import ArticleContent from '@/components/article/ArticleContent'; // todo change name of component
+import ArticleContent from '@/components/text/mdfield'; // todo change name of component
 import MapEmbed from '@/components/mapEmbed/mapEmbed';
 
 export interface MidsectionProps {

@@ -15,10 +15,10 @@ export default function GenPage() {
   "imageSrc": "/",
   "aboutMe": {
     "moto": "",
-    "backgroundSrc": "/",
-    "imageSrc": "/",
+    "backgroundSrc": "/image2.jpg",
+    "imageSrc": "/image.jpg",
     "altText": "",
-    "emblemSrc": "/",
+    "emblemSrc": "/image3.jpg",
     "emblemAlt": "",
     "textunderbutton": "",
     "primaryLinkHref": "",

@@ -10,9 +10,18 @@ export const metadata: Metadata = {
 
 export default function GenPage() {
   const props = {
-  "pageTitle": "Announcements from the Transition",
-  "pageSubtitle": "Press Room",
-  "items": [],
+  "pageTitle": "",
+  "pageSubtitle": "",
+  "pageImage": "/",
+  "items": [
+    {
+      "key": "test",
+      "linkHref": "/news/test",
+      "title": "test",
+      "date": "2026-6-2",
+      "summary": "test"
+    }
+  ],
   "candidateName": "Jane Doe",
   "campaignName": "Jane for Council",
   "email": "",
