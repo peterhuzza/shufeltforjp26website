@@ -6,7 +6,7 @@ interface ButtonProps {
   href?: string;                      // If this exists, it becomes a Link
   onClick?: () => void;               // If this exists (and no href), it's a Button
   type?: "button" | "submit";
-  variant?: "primary" | "secondary" | "outline" | "danger" | "refined" | "header" | "danger2";
+  variant?: "primary" | "secondary" | "outline" | "danger" | "refined" | "header";
   className?: string;
   external?: boolean;                 // Force a standard <a> tag (good for external links)
 }
@@ -68,18 +68,8 @@ const Button: React.FC<ButtonProps> = ({
       after:pointer-events-none
     `,
 
-    header: "relative px-4 overflow-hidden flex justify-center items-center bg-transparent border-t border-brand-blue border-x border-black border-b-0 text-base text-white transition-all duration-300 hover:border-t-2 hover:border-t-inferno after:absolute after:inset-0 after:pointer-events-none after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0)_0%,_transparent_60%)] hover:after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0.25)_0%,_transparent_60%)] ",
-    danger2: `
-      bg-btn-base-danger2
-      text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-xl transition-all duration-300 
-      hover:bg-btn-hover-danger2
-      active:scale-[0.98] rounded-none 
-      relative overflow-hidden isolate
-      before:content-[''] before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_50%_50%,_rgba(255,255,255,0.2)_0%,_transparent_70%)] before:-z-20
-      after:content-[''] after:absolute after:inset-0 after:pointer-events-none after:transition-all after:duration-300 after:bg-[radial-gradient(ellipse_200%_100%_at_bottom,_var(--color-btn-curve-danger2)_45%,_transparent_45.1%)] after:-z-10
-      hover:after:bg-[radial-gradient(ellipse_200%_100%_at_bottom,_var(--color-btn-curve-danger2-hover)_45%,_transparent_45.1%)]
-    `
+    header: "relative px-4 overflow-hidden flex justify-center items-center bg-transparent border-t border-brand-color1 border-x border-black border-b-0 text-base text-white transition-all duration-300 hover:border-t-2 hover:border-t-inferno after:absolute after:inset-0 after:pointer-events-none after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0)_0%,_transparent_60%)] hover:after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0.25)_0%,_transparent_60%)] ",
+
 
   };
 

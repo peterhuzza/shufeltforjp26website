@@ -2,62 +2,58 @@
 
 @theme {
   /* This maps your utility classes directly */
-  /* Usage: bg-brand-blue, text-brand-blue */
-  --color-brand-color1: #11117F;
-  --color-brand-color2: #0075C4;
-  --color-imperial-blue: #11275F;
-  --color-plat: #F1F1F1;
-  --color-inferno: #BF1111;
+  /* Usage: bg-brand-color1, text-brand-color1 */
+  --color-brand-color1: #4E3B31;
+  --color-brand-color2: #8C7361;
+  --color-imperial-blue: #3D2B1F;
+  --color-plat: #E5D3B3;
+  --color-inferno: #A67C52;
 
-  --color-instagram: #a321c7;
-  --color-facebook: #234ae9;
-  --color-tiktok: #c51717;
-  --color-mail: #0075C4;
+  --color-instagram: #7D6B5D;
+  --color-facebook: #8C7361;
+  --color-tiktok: #5C4033;
+  --color-mail: #4E3B31;
 
-  --color-btn-base-start-primary: #0075C4;   
-  --color-btn-base-end-primary: #11275F;          
-  --color-btn-hover-start-primary: #1186D5;   /* Fonts, breakpoints, etc. go here too if needed */
-  --color-btn-hover-end-primary: #223870; 
-  --color-btn-highlight-primary: #ffffff;        
+  --color-btn-base-start-primary: #8C7361;   
+  --color-btn-base-end-primary: #4E3B31;          
+  --color-btn-hover-start-primary: #A67C52;   
+  --color-btn-hover-end-primary: #5C4033; 
+  --color-btn-highlight-primary: #F5F5DC;        
 
-  --color-btn-base-start-secondary: #0075C4;   
-  --color-btn-base-end-secondary: #11275F;          
-  --color-btn-hover-start-secondary: #1186D5;   /* Fonts, breakpoints, etc. go here too if needed */
-  --color-btn-hover-end-secondary: #223870; 
-  --color-btn-highlight-secondary: #ffffff;
+  --color-btn-base-start-secondary: #5C4033;   
+  --color-btn-base-end-secondary: #3D2B1F;          
+  --color-btn-hover-start-secondary: #8C7361;   
+  --color-btn-hover-end-secondary: #4E3B31; 
+  --color-btn-highlight-secondary: #F5F5DC;
 
-  --color-btn-base-start-mobile: #0075C4;   
-  --color-btn-base-end-mobile: #11275F;          
-  --color-btn-hover-start-mobile: #1186D5;   /* Fonts, breakpoints, etc. go here too if needed */
-  --color-btn-hover-end-mobile: #223870; 
-  --color-btn-highlight-mobile: #ffffff;
+  --color-btn-base-start-mobile: #8C7361;   
+  --color-btn-base-end-mobile: #4E3B31;          
+  --color-btn-hover-start-mobile: #A67C52;   
+  --color-btn-hover-end-mobile: #5C4033; 
+  --color-btn-highlight-mobile: #F5F5DC;
 
-  --color-btn-base-start-danger: #BF1111;   
-  --color-btn-base-end-danger: #220000;
-;          
-  --color-btn-hover-start-danger: #D02222;   /* Fonts, breakpoints, etc. go here too if needed */
-  --color-btn-hover-end-danger: #331111; 
+  --color-btn-base-start-danger: #722F37;   
+  --color-btn-base-end-danger: #3E1E1E;
+  --color-btn-hover-start-danger: #8B3E3E;   
+  --color-btn-hover-end-danger: #5E2D2D; 
   --color-btn-highlight-danger: #ffffff; 
-  --color-btn-base-danger2: #6A0A0A;
-  --color-btn-hover-danger2: #7A0A0A;
-   --color-btn-base-danger2: #6A0A0A;
-   --color-btn-hover-danger2: #7A0A0A;
-   --color-btn-curve-danger2: #8A0C0C;
-   --color-btn-curve-danger2-hover: #9A0D0D;
-
-
+  --color-btn-base-danger2: #5D4037;
+  --color-btn-hover-danger2: #795548;
+  --color-btn-curve-danger2: #8D6E63;
+  --color-btn-curve-danger2-hover: #9E7E73;
 }
+
 /* Standard CSS variables for non-Tailwind usage (optional but good for consistency) */
 :root {
-  --background: #ffffff;
-  --foreground: #f9fafb;
+  --background: #F5F5DC;
+  --foreground: #3D2B1F;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff;
+    --background: #3D2B1F;
     /* Keeping light mode preference per your design */
-    --foreground: #f1f1f1;
+    --foreground: #F5F5DC;
   }
 }
 
