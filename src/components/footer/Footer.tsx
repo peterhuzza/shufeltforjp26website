@@ -25,7 +25,7 @@ export default function Footer({
 
 }: FooterProps) {
   return (
-    <footer className="py-8 border-t-2 bg-brand-blue border-t-inferno">
+    <footer className="py-8 border-t-2 bg-brand-color1 border-t-inferno">
       <div className='container mx-auto px-6 flex flex-col md:flex-row justify-between items-start'>
 
         {/* LEFT SIDE: Socials & Copyright */}

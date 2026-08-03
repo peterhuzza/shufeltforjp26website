@@ -3,8 +3,8 @@
 @theme {
   /* This maps your utility classes directly */
   /* Usage: bg-brand-blue, text-brand-blue */
-  --color-brand-blue: #11117F;
-  --color-brand-blue2: #0075C4;
+  --color-brand-color1: #11117F;
+  --color-brand-color2: #0075C4;
   --color-imperial-blue: #11275F;
   --color-plat: #F1F1F1;
   --color-inferno: #BF1111;

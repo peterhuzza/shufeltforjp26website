@@ -32,7 +32,7 @@ export default function Header({ navLinks, candidateName, donationUrl }: HeaderP
   }, [mobileMenuOpen]);
 
   return (
-    <header className="bg-brand-blue border-b-2 border-b-inferno sticky top-0 z-50 shadow-sm w-full h-14">
+    <header className="bg-brand-color1 border-b-2 border-b-inferno sticky top-0 z-50 shadow-sm w-full h-14">
       <nav className="max-w-[90vw] mx-auto px-4 sm:px-6 lg:px-8 h-full">
 
         <div className="flex justify-between items-center w-full h-full">
@@ -101,7 +101,7 @@ export default function Header({ navLinks, candidateName, donationUrl }: HeaderP
                   key={name}
                   href={href}
                   variant="primary"
-                  className="flex justify-center items-center py-3 block w-full text-center text-base font-medium text-brand-blue2 hover:opacity-80 transition-opacity"
+                  className="flex justify-center items-center py-3 block w-full text-center text-base font-medium text-brand-color2 hover:opacity-80 transition-opacity"
                 >
                   {name}
                 </Button>
