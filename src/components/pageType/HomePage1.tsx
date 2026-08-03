@@ -2,20 +2,8 @@ import React from 'react';
 import AboutSection from "@/components/midsection/AboutSection";
 import QuickLinksSection from "@/components/subcomponents/QuickLinks";
 import BannerAboutMe from "@/components/heroSection/BannerAboutMe";
-import Midsection from "@/components/midsection/midsection2";
+import Midsection from "@/components/midsection/midsection";
 // 1. Define the shape of the 'aboutMe' data
-/*
- *
- *
- *
- * this is a test
- *
- *
- *
- *
- *
- *
- */
 interface AboutMeData {
   moto: string;
   backgroundSrc: string;
@@ -34,13 +22,10 @@ interface AboutMeData {
 
 // 2. Define the shape of the 'midsection' data
 // UPDATED: Added preview1 and preview2 to match Midsection requirements
-//
-//
 
 
 interface MidsectionData {
   mapSrc: string;
-  //test
   content: string | string[];
 }
 
@@ -51,7 +36,6 @@ interface HomeProps {
 }
 
 export default function Home({ aboutMe, midsectionContent }: HomeProps) {
-
   // Hardcoded data has been removed. 
   // The component now relies on 'aboutMe' and 'midsectionContent' passed in as props.
 
@@ -74,16 +58,11 @@ export default function Home({ aboutMe, midsectionContent }: HomeProps) {
         secondaryLinkLabel={aboutMe.secondaryLinkLabel}
       />
 
-      {/* 1.5 QUICK LINKS (Optional) */}
-      {/* <QuickLinksSection /> */}
-
-      {/* 1.7 NEW: LANDSCAPE IMAGE BANNER */}
-
       <div className="border-t-2 bg-gray-50 border-inferno">
         {/* 2. ABOUT/AGENDA SECTION */}
         <Midsection mapSrc={midsectionContent.mapSrc} content={midsectionContent.content} />
-        {/* Add more sections here as the site grows */}
       </div>
+      {/* Add more sections here as the site grows */}
     </main>
   );
 }

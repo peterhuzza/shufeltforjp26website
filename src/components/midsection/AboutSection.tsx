@@ -5,9 +5,6 @@ interface AboutSectionProps {
   title: string;
   paragraphs: string[];
 }
-
-
-
 export default function AboutSection({ title, paragraphs }: AboutSectionProps) {
   return (
     <section id="about" className="py-12 bg-gray-50 scroll-smooth">

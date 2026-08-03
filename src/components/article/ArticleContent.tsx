@@ -1,8 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import NextImage from 'next/image';
-//test
 export interface ArticleContentProps {
-  // test
   content: string | string[];
 }
 
