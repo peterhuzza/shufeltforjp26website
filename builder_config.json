@@ -11,13 +11,28 @@
         "volunteerUrl": ""
     },
     "selections": {
-        "home": "AboutMePage1"
+        "home": "HomePage1"
     },
     "route_data": {
         "home": {
             "title": "",
             "content": [],
-            "imageSrc": ""
+            "imageSrc": "",
+            "aboutMe.moto": "",
+            "aboutMe.backgroundSrc": "",
+            "aboutMe.imageSrc": "",
+            "aboutMe.altText": "",
+            "aboutMe.emblemSrc": "",
+            "aboutMe.emblemAlt": "",
+            "aboutMe.textunderbutton": "",
+            "aboutMe.primaryLinkHref": "",
+            "aboutMe.primaryLinkLabel": "",
+            "aboutMe.secondaryLinkHref": "",
+            "aboutMe.secondaryLinkLabel": "",
+            "midsectionContent.mapSrc": "",
+            "midsectionContent.content": [],
+            "campaignBadge": "",
+            "imageCap": ""
         }
     },
     "route_names": {
