@@ -1,7 +1,7 @@
 import React from 'react';
-import AboutSection from "@/components/midsection/AboutSection";
-import QuickLinksSection from "@/components/subcomponents/QuickLinks";
-import BannerAboutMe from "@/components/heroSection/BannerAboutMe";
+import AboutSection from "@/components/midsection/aboutSection";
+import QuickLinksSection from "@/components/subcomponents/quickLinks";
+import BannerAboutMe from "@/components/heroSection/bannerAboutMe";
 import Midsection from "@/components/midsection/midsection";
 // 1. Define the shape of the 'aboutMe' data
 /*

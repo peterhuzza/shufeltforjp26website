@@ -1,5 +1,5 @@
 import React from 'react';
-import NewsPanel from '@/components/subcomponents/NewsPanel';
+import NewsPanel from '@/components/subcomponents/newsPanel';
 import Image from 'next/image'
 // 1. Define the shape of a single news item
 export interface NewsItem {
