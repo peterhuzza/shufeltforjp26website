@@ -5,16 +5,12 @@ interface AboutPageProps {
   title: string;
   content: string[];
   imageSrc: string;
-  campaignBadge: string;
-  imageCap: string;
 }
 
 export default function AboutMeEditorial({
   title,
   content,
   imageSrc,
-  campaignBadge,
-  imageCap,
 }: AboutPageProps) {
   return (
     <main className="flex-grow bg-white">

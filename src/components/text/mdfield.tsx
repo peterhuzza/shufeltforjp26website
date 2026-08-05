@@ -3,6 +3,7 @@ import NextImage from 'next/image';
 
 export interface MarkdownFieldProps {
   content: string | string[];
+  className?: string;
 }
 
 // Helper: Auto-fix paths and validate safe protocols
@@ -53,66 +54,76 @@ const StyledImage = ({ src, alt }: { src: string; alt?: string }) => {
   );
 };
 
-export default function MarkdownField({ content }: MarkdownFieldProps) {
+export default function MarkdownField({ content, className = "" }: MarkdownFieldProps) {
   if (!content) return null;
 
-  const validContent = Array.isArray(content) ? content.join('\n\n') : content;
+  // Normalize content: trim whitespace and join blocks
+  const validContent = Array.isArray(content)
+    ? content.map(c => c.trim()).filter(Boolean).join('\n\n')
+    : content;
 
   return (
-    <article className="max-w-3xl mx-auto prose prose-lg prose-slate text-slate-700 leading-relaxed text-left">
-      <ReactMarkdown
-        components={{
-          img: ({ node, ...props }) => (
-            <StyledImage src={props.src as string} alt={props.alt} />
-          ),
+    <div className={`max-w-3xl mx-auto px-4 py-8 ${className}`}>
+      <article className="prose prose-lg prose-slate text-slate-700 leading-relaxed text-left">
+        <ReactMarkdown
+          components={{
+            // Explicitly style headers to ensure they override any prose conflicts
+            h1: ({ node, ...props }) => <h1 className="text-4xl font-extrabold mb-8 mt-10" {...props} />,
+            h2: ({ node, ...props }) => <h2 className="text-2xl font-bold mb-6 mt-8" {...props} />,
+            h3: ({ node, ...props }) => <h3 className="text-xl font-semibold mb-4 mt-6" {...props} />,
 
-          a: ({ node, ...props }) => {
-            const rawHref = props.href as string;
-            if (!rawHref) return <a {...props} className="text-indigo-600 hover:underline">{props.children}</a>;
+            // Paragraphs with a bit of extra bottom margin
+            p: ({ node, ...props }) => <p className="mb-6" {...props} />,
 
-            const youtubeId = getYouTubeId(rawHref);
+            img: ({ node, ...props }) => (
+              <StyledImage src={props.src as string} alt={props.alt} />
+            ),
 
-            if (youtubeId) {
+            a: ({ node, ...props }) => {
+              const rawHref = props.href as string;
+              if (!rawHref || rawHref.startsWith('#')) {
+                return <a {...props} className="text-indigo-600 hover:underline font-medium">{props.children}</a>;
+              }
+
+              const youtubeId = getYouTubeId(rawHref);
+              if (youtubeId) {
+                return (
+                  <span className="block my-8 aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${youtubeId}`}
+                      className="w-full h-full border-none"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      referrerPolicy="no-referrer"
+                    />
+                  </span>
+                );
+              }
+
+              const isSafeProtocol = rawHref.startsWith('https://') || rawHref.startsWith('/');
+              const safeHref = isSafeProtocol ? rawHref : '#';
+
+              if (/\.(jpg|png|webp|svg)$/i.test(rawHref)) {
+                return <StyledImage src={rawHref} alt={String(props.children)} />;
+              }
+
               return (
-                <span className="block my-8 aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${youtubeId}`}
-                    className="w-full h-full border-none"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    referrerPolicy="no-referrer"
-                  />
-                </span>
+                <a
+                  {...props}
+                  href={safeHref}
+                  className="text-indigo-600 hover:underline font-medium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {props.children}
+                </a>
               );
             }
-
-            // Security: Prevent javascript: and other dangerous protocols
-            // Only allow https:// and relative paths (starting with / but not //)
-            const isSafeProtocol = rawHref.startsWith('https://') ||
-              (rawHref.startsWith('/') && !rawHref.startsWith('//'));
-
-            const safeHref = isSafeProtocol ? rawHref : '#';
-
-            if (/\.(jpg|png|webp|svg)$/i.test(rawHref)) {
-              return <StyledImage src={rawHref} alt={String(props.children)} />;
-            }
-
-            return (
-              <a
-                {...props}
-                href={safeHref}
-                className="text-indigo-600 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {props.children}
-              </a>
-            );
-          }
-        }}
-      >
-        {validContent}
-      </ReactMarkdown>
-    </article>
+          }}
+        >
+          {validContent}
+        </ReactMarkdown>
+      </article>
+    </div>
   );
 }

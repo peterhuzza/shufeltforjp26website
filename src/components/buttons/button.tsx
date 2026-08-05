@@ -24,55 +24,41 @@ const Button: React.FC<ButtonProps> = ({
 
   const variants = {
     primary: `
-      bg-gradient-to-b from-btn-base-start-primary to-btn-base-end-primary 
+      bg-btn-base-start-primary 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-xl transition-all duration-300 
-      hover:from-btn-hover-start-primary hover:to-btn-hover-end-primary 
-      active:scale-[0.98]  
-      relative overflow-hidden 
-      after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_15%,_rgba(255,255,255,0.12)_0%,_transparent_60%)] 
-      hover:shadow-xl hover:-translate-y-0.5
+      shadow-md transition-all duration-300 
+      hover:shadow-lg hover:-translate-y-0.5
+      active:scale-[0.98] 
+      rounded-sm
     `,
     secondary: `
-      bg-gradient-to-b from-[#22227F] to-[#000022] 
+      bg-btn-base-start-secondary 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-xl transition-all duration-300 
-      hover:from-[#333390] hover:to-[#222244] 
-      active:scale-[0.98] rounded-none 
-      relative overflow-hidden 
-      after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_15%,_rgba(255,255,255,0.12)_0%,_transparent_60%)] 
-      after:pointer-events-none
-      hover:shadow-xl hover:-translate-y-0.5
+      shadow-md transition-all duration-300 
+      hover:bg-btn-hover-start-secondary 
+      active:scale-[0.98] 
+      rounded-sm
     `,
-    mobile: "p-2 text-brand-color2 hover:bg-plat transition-colors",
-    outline: "border-2 border-brand-color text-brand-blue hover:bg-brand-blue/5 focus:ring-brand-blue",
+    mobile: "p-2 text-brand-color2 hover:bg-brand-color2/10 transition-colors",
+    outline: "border-2 border-brand-color text-brand-color hover:bg-brand-color/5 focus:ring-brand-color",
     danger: `
-      bg-gradient-to-b from-btn-base-start-danger to-btn-base-end-danger 
+      bg-btn-base-start-danger 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-xl transition-all duration-300 
-      hover:from-btn-hover-start-danger hover:to-btn-hover-end-danger 
-      active:scale-[0.98] rounded-none 
-      relative overflow-hidden 
-      after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_20%,_rgba(255,200,200,0.20)_0%,_transparent_70%)] 
-      after:pointer-events-none
-      hover:shadow-xl hover:-translate-y-0.5
+      shadow-md transition-all duration-300 
+      hover:shadow-lg hover:-translate-y-0.5
+      active:scale-[0.98] 
+      rounded-sm
     `,
     refined: `
-      bg-gradient-to-b from-btn-base-start-primary to-btn-base-end-primary 
+      bg-brand-color1 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-xl transition-all duration-300 
-      hover:from-btn-hover-start-primary hover:to-btn-hover-end-primary 
-      active:scale-[0.98] rounded-none 
-      relative overflow-hidden 
-      after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_15%,_rgba(255,255,255,0.12)_0%,_transparent_60%)] 
-      after:pointer-events-none
+      shadow-md transition-all duration-300 
+      hover:shadow-lg hover:-translate-y-0.5
+      active:scale-[0.98] 
+      rounded-sm
     `,
-
-    header: "relative px-4 overflow-hidden flex justify-center items-center bg-transparent border-t border-brand-color1 border-x border-black border-b-0 text-base text-white transition-all duration-300 hover:border-t-2 hover:border-t-inferno after:absolute after:inset-0 after:pointer-events-none after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0)_0%,_transparent_60%)] hover:after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0.25)_0%,_transparent_60%)] ",
-
-
+    header: "relative px-4 overflow-hidden flex justify-center items-center bg-transparent border-t border-brand-color1 border-x border-black border-b-0 text-base text-white transition-all duration-300 hover:border-t-2 hover:border-t-inferno after:absolute after:inset-0 after:pointer-events-none after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0)_0%,_transparent_60%)] hover:after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0.25)_0%,_transparent_60%)] "
   };
-
   const combinedStyles = `${variants[variant]} ${className} `;
 
   // 2. CASE A: It's an External Link (e.g., https://google.com)

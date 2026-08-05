@@ -1,7 +1,7 @@
 /**
  * AUTO-GENERATED FILE. Route: /news
  */
-import NewsPage1 from "@/components/pageType/NewsPage1";
+import Newspage1 from "@/components/pageType/newsPage1";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,6 +22,11 @@ export default function GenPage() {
       "summary": "test"
     }
   ],
+  "title": "",
+  "content": [],
+  "imageSrc": "/",
+  "campaignBadge": "",
+  "imageCap": "/",
   "candidateName": "Jane Doe",
   "campaignName": "Jane for Council",
   "email": "",
@@ -32,5 +37,5 @@ export default function GenPage() {
   "twitterUrl": "",
   "volunteerUrl": ""
 };
-  return <NewsPage1 {...props} />;
+  return <Newspage1 {...props} />;
 }

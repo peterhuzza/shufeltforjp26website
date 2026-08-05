@@ -1,6 +1,6 @@
 "use client";
 
-import ArticleContent from '@/components/text/mdfield'; // todo change name of component
+import Textfield from '@/components/text/mdfield'; // todo change name of component
 import MapEmbed from '@/components/mapEmbed/mapEmbed';
 
 export interface MidsectionProps {
@@ -33,7 +33,7 @@ export default function Midsection({
             md:w-1/2 (Desktop): Half width
           */}
           <div className="items-center w-full md:w-1/2 mx-auto py-6 px-5 ">
-            <ArticleContent content={content} />
+            <Textfield className='' content={content} />
           </div>
 
         </div>

@@ -1,7 +1,7 @@
 /**
  * AUTO-GENERATED FILE. Route: /news/test
  */
-import NewsArticlePage1 from "@/components/pageType/NewsArticlePage1";
+import Newsarticlepage1 from "@/components/pageType/newsArticlePage1";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -35,5 +35,5 @@ export default function GenPage() {
   "twitterUrl": "",
   "volunteerUrl": ""
 };
-  return <NewsArticlePage1 {...props} />;
+  return <Newsarticlepage1 {...props} />;
 }
