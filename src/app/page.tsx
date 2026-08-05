@@ -14,7 +14,7 @@ export default function GenPage() {
   "content": [],
   "imageSrc": "/",
   "aboutMe": {
-    "moto": "",
+    "moto": "Start building your website!",
     "backgroundSrc": "/image2.jpg",
     "imageSrc": "/image.jpg",
     "altText": "",

@@ -20,7 +20,7 @@
             "title": "",
             "content": [],
             "imageSrc": "",
-            "aboutMe.moto": "",
+            "aboutMe.moto": "Start building your website!",
             "aboutMe.backgroundSrc": "image2.jpg",
             "aboutMe.imageSrc": "image.jpg",
             "aboutMe.altText": "",
@@ -58,7 +58,11 @@
             "campaignBadge": "",
             "imageCap": ""
         },
-        "privacy": {}
+        "privacy": {
+            "campaignName": "",
+            "email": "",
+            "lastUpdated": ""
+        }
     },
     "route_names": {
         "1": "Home",

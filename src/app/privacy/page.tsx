@@ -10,9 +10,10 @@ export const metadata: Metadata = {
 
 export default function GenPage() {
   const props = {
-  "candidateName": "Jane Doe",
   "campaignName": "Jane for Council",
   "email": "",
+  "lastUpdated": "",
+  "candidateName": "Jane Doe",
   "facebookUrl": "",
   "instagramUrl": "",
   "tiktokUrl": "",

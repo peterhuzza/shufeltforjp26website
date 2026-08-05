@@ -1,6 +1,6 @@
 "use client";
 
-import Textfield from '@/components/text/mdfield'; // todo change name of component
+import Textfield from '@/components/text/mdfield';
 import MapEmbed from '@/components/mapEmbed/mapEmbed';
 
 export interface MidsectionProps {
@@ -18,24 +18,13 @@ export default function Midsection({
         {/* flex-col (Mobile): Stacks elements vertically
           md:flex-row (Desktop): Places them side-by-side 
         */}
-        <div className="flex flex-col md:flex-row h-full items-start">
-
-          {/* Map: 
-            w-full h-[35vh] (Mobile): Full width, fixed height so it doesn't take up the whole screen
-            md:w-1/2 md:h-[75vh] (Desktop): Half width, taller height
-          */}
+        <div className="flex flex-col md:flex-row items-stretch">
           <div className="w-full h-[35vh] md:w-1/2 md:h-[75vh]">
             <MapEmbed embedSrc={mapSrc} />
           </div>
-
-          {/* Content: 
-            w-full (Mobile): Full width
-            md:w-1/2 (Desktop): Half width
-          */}
-          <div className="items-center w-full md:w-1/2 mx-auto py-6 px-5 ">
+          <div className="flex items-center justify-center w-full md:w-1/2 px-5">
             <Textfield className='' content={content} />
           </div>
-
         </div>
 
       </section>

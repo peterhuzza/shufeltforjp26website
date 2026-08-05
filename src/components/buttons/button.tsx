@@ -57,7 +57,7 @@ const Button: React.FC<ButtonProps> = ({
       active:scale-[0.98] 
       rounded-sm
     `,
-    header: "relative px-4 overflow-hidden flex justify-center items-center bg-transparent border-t border-brand-color1 border-x border-black border-b-0 text-base text-white transition-all duration-300 hover:border-t-2 hover:border-t-inferno after:absolute after:inset-0 after:pointer-events-none after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0)_0%,_transparent_60%)] hover:after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0.25)_0%,_transparent_60%)] "
+    header: "px-4 flex justify-center items-center bg-transparent border-t-2 border-brand-color1 border-x border-black text-base text-white transition-all duration-300 hover:border-t-inferno"
   };
   const combinedStyles = `${variants[variant]} ${className} `;
 
