@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import NextImage from 'next/image';
+import { getPublicPath } from '@/utils/paths';
 import React from 'react';
 export interface MarkdownFieldProps {
   content: string | string[];
@@ -13,7 +14,7 @@ const getSafeSrc = (src: string) => {
   const isHttps = src.startsWith("https://");
   const isRelative = src.startsWith("/") && !src.startsWith("//");
   if (isHttps || isRelative) return src;
-  if (!src.startsWith("/") && !src.startsWith("//")) return `${prefix}/${src}`;
+  if (!src.startsWith("/") && !src.startsWith("//")) return `${getPublicPath(`/${src}`)}`;
   return "";
 };
 
