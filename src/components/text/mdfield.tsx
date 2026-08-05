@@ -6,13 +6,14 @@ export interface MarkdownFieldProps {
   className?: string;
 }
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 // Helper: Auto-fix paths and validate safe protocols
 const getSafeSrc = (src: string) => {
   if (!src) return "";
   const isHttps = src.startsWith("https://");
   const isRelative = src.startsWith("/") && !src.startsWith("//");
   if (isHttps || isRelative) return src;
-  if (!src.startsWith("/") && !src.startsWith("//")) return `/${src}`;
+  if (!src.startsWith("/") && !src.startsWith("//")) return `${prefix}/${src}`;
   return "";
 };
 
@@ -31,7 +32,7 @@ const StyledImage = ({ src, alt }: { src: string; alt?: string }) => {
   return (
     <span className="my-8 w-full flex justify-center">
       <NextImage
-        src={`${prefix}/${safeSrc}`}
+        src={safeSrc}
         alt={alt || "Article Image"}
         width={1200}
         height={675}
