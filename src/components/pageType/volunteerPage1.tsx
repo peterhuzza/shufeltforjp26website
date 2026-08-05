@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from "@/components/buttons/button";
-import Image from 'next/image';
+import { PublicImage } from '@/utils/getImage';
 
 interface VolunteerPageProps {
   badgeText: string;
@@ -37,7 +37,7 @@ export default function VolunteerPage1({
 
           {/* LEFT COLUMN: Image content (Hidden on mobile) */}
           <div className="hidden md:block lg:w-2/3 relative h-[500px] md:h-[600px]">
-            <Image
+            <PublicImage
               className="w-full h-full object-cover"
               src={imageSrc}
               alt={altImage}
@@ -48,7 +48,7 @@ export default function VolunteerPage1({
           {/* RIGHT COLUMN: CTA Sidebar */}
           <div className="p-8 md:p-12 lg:w-1/3 bg-btn-base-start-secondary flex flex-col justify-center items-center text-center border-t lg:border-t-0 lg:border-l border-btn-base-start-secondary">
             <div className="mb-6 p-4 bg-brand-color1 rounded-lg shadow-sm bg-btn-base-start-secondary">
-              <Image
+              <PublicImage
                 className="pb-2 pt-1"
                 src={iconImage}
                 alt={badgeText}
