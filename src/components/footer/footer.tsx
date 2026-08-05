@@ -99,7 +99,7 @@ export default function Footer({
           <div className="text-left text-white text-sm">
             <p>&copy; {new Date().getFullYear()} {candidateName}. All rights reserved.</p>
             <div className="mt-2 space-x-4">
-              <a href="/privacy" className="hover:text-inferno transition">Privacy Policy</a>
+              <Button variant='hidden' href="/privacy" className="hover:text-inferno transition">Privacy Policy</Button>
             </div>
           </div>
         </div>

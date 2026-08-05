@@ -6,7 +6,7 @@ interface ButtonProps {
   href?: string;                      // If this exists, it becomes a Link
   onClick?: () => void;               // If this exists (and no href), it's a Button
   type?: "button" | "submit";
-  variant?: "primary" | "secondary" | "outline" | "danger" | "refined" | "header";
+  variant?: "primary" | "secondary" | "outline" | "danger" | "refined" | "header" | "hidden";
   className?: string;
   external?: boolean;                 // Force a standard <a> tag (good for external links)
 }
@@ -57,7 +57,8 @@ const Button: React.FC<ButtonProps> = ({
       active:scale-[0.98] 
       rounded-sm
     `,
-    header: "px-4 flex justify-center items-center bg-transparent border-t-2 border-brand-color1 border-x border-black text-base text-white transition-all duration-300 hover:border-t-inferno"
+    header: "px-4 flex justify-center items-center bg-transparent border-t-2 border-brand-color1 border-x border-black text-base text-white transition-all duration-300 hover:border-t-inferno",
+    hidden: "hover:text-underline hover:text-inferno transition"
   };
   const combinedStyles = `${variants[variant]} ${className} `;
 
