@@ -49,8 +49,8 @@
             "imageCap": ""
         },
         "news": {
-            "pageTitle": "",
-            "pageSubtitle": "",
+            "pageTitle": "Blogging functionality",
+            "pageSubtitle": "test",
             "pageImage": "image.jpg",
             "items": [],
             "title": "",
@@ -80,7 +80,7 @@
     },
     "route_names": {
         "1": "Home",
-        "2": "news",
+        "2": "News",
         "3": "privacy",
         "4": "volunteer"
     },

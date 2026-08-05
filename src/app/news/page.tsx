@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function GenPage() {
   const props = {
-  "pageTitle": "",
-  "pageSubtitle": "",
+  "pageTitle": "Blogging functionality",
+  "pageSubtitle": "test",
   "pageImage": "/image.jpg",
   "items": [
     {

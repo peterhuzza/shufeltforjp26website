@@ -24,7 +24,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen bg-white text-gray-900 font-sans">
 
           <Header
-            navLinks={ {'Home': '/', 'news': '/news'} }
+            navLinks={ {'Home': '/', 'News': '/news'} }
             candidateName="Jane Doe"
             donationUrl="/donate"
           />
