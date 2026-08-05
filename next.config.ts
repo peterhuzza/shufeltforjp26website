@@ -1,14 +1,14 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
   output: "export",
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
+  basePath: "/nextjstemtemplate", // Add this line
   allowedDevOrigins: ["0.0.0.0"],
 };
 
-export default nextConfig;
