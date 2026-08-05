@@ -1,7 +1,7 @@
 /**
  * AUTO-GENERATED FILE. Route: /privacy
  */
-import Privacypage1 from "@/components/pageType/privacyPage1";
+import Privacypage2 from "@/components/pageType/privacyPage2";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,5 +21,5 @@ export default function GenPage() {
   "twitterUrl": "",
   "volunteerUrl": ""
 };
-  return <Privacypage1 {...props} />;
+  return <Privacypage2 {...props} />;
 }

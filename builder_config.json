@@ -13,7 +13,7 @@
     "selections": {
         "home": "homePage1",
         "news": "newsPage1",
-        "privacy": "privacyPage1"
+        "privacy": "privacyPage2"
     },
     "route_data": {
         "home": {
