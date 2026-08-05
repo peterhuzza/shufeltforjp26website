@@ -1,6 +1,7 @@
 import React from 'react';
 import NewsPanel from '@/components/subcomponents/newsPanel';
 import Image from 'next/image'
+import { PublicImage } from '@/utils/getImage';
 // 1. Define the shape of a single news item
 export interface NewsItem {
   key: string;
@@ -30,12 +31,11 @@ export default function NewsPage1({
     <main className="min-h-screen bg-brand-color2">
       {/* 1. Header Section */}
       <div className="bg-[#444444] relative w-full py-16 px-6 text-center border-b-2 border-inferno overflow-hidden">
-        <Image
+        <PublicImage
           src={pageImage}
           alt="Background header"
           fill
           className="object-cover object-center "
-          priority // Optional: Use this if this is the top hero section (loads faster)
         />
         <div className=' relative z-10'>
           <div className="max-w-4xl mx-auto space-y-4 ">
