@@ -12,7 +12,7 @@ export default function GenPage() {
   const props = {
   "pageTitle": "",
   "pageSubtitle": "",
-  "pageImage": "/",
+  "pageImage": "/image.jpg",
   "items": [
     {
       "key": "test",

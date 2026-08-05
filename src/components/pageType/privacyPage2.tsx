@@ -15,7 +15,7 @@ export default function PrivacyPolicy({
 }: PrivacyPageProps) {
 
   return (
-    <main className="min-h-screen bg-white py-16 px-6">
+    <main className="min-h-screen bg-brand-color2 py-16 px-6">
       <div className="max-w-3xl mx-auto">
 
         {/* Header */}

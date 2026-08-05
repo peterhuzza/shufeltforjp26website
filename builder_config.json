@@ -13,7 +13,8 @@
     "selections": {
         "home": "homePage1",
         "news": "newsPage1",
-        "privacy": "privacyPage2"
+        "privacy": "privacyPage2",
+        "volunteer": "volunteerPage1"
     },
     "route_data": {
         "home": {
@@ -50,7 +51,7 @@
         "news": {
             "pageTitle": "",
             "pageSubtitle": "",
-            "pageImage": "",
+            "pageImage": "image.jpg",
             "items": [],
             "title": "",
             "content": [],
@@ -62,24 +63,41 @@
             "campaignName": "",
             "email": "",
             "lastUpdated": ""
+        },
+        "volunteer": {
+            "badgeText": "text",
+            "heroTitle": "(Templat example) Volunteer",
+            "heroSubtitle": "page",
+            "imageSrc": "image.jpg",
+            "altImage": "image 1",
+            "ctaTitle": "title",
+            "ctaDescription": "discription",
+            "ctaButtonText": "button",
+            "ctaButtonLink": "/",
+            "iconImage": "image2.jpg",
+            "pageImage": "image 2"
         }
     },
     "route_names": {
         "1": "Home",
         "2": "news",
-        "3": "privacy"
+        "3": "privacy",
+        "4": "volunteer"
     },
     "route_map": {
         "1": "home",
         "2": "news",
-        "3": "privacy"
+        "3": "privacy",
+        "4": "volunteer"
     },
     "hidden": {
         "home": false,
         "tab-2": false,
         "news": false,
         "tab-3": false,
-        "privacy": true
+        "privacy": true,
+        "tab-4": false,
+        "volunteer": true
     },
     "articles": [
         {
