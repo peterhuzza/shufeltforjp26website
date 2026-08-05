@@ -1,6 +1,8 @@
 import React from 'react';
-import NextImage, { StaticImageData } from 'next/image';
 import Button from "@/components/buttons/button";
+import { getPublicPath } from '@/utils/paths';
+import { PublicImage } from '@/utils/getImage';
+import { StaticImageData } from 'next/image';
 
 interface AboutMeProp {
   moto: string;
@@ -32,7 +34,7 @@ export default function BannerAboutMe({
   return (
     <section className="relative h-[calc(90vh-34px)] w-full md:h-[94vh] lg:h-[94.6vh] bg-white flex items-center md:items-end overflow-hidden">
       {/* Background Image */}
-      <NextImage
+      <PublicImage
         src={imageSrc}
         alt={altText}
         fill
@@ -49,7 +51,7 @@ export default function BannerAboutMe({
       <div className="absolute bottom-8 z-10 w-full flex flex-col items-center justify-end md:hidden px-6 gap-2">
         {emblemSrc && (
           <div className="w-[40vh] h-[40vh] relative drop-shadow-xl">
-            <NextImage
+            <PublicImage
               src={emblemSrc}
               alt={emblemAlt}
               fill
@@ -98,8 +100,8 @@ export default function BannerAboutMe({
         <div className="flex flex-col items-center gap-6">
           {emblemSrc && (
             <div className="w-[40vh] h-[40vh] lg:w-[50vh] lg:h-[50vh] mb-[36vh] relative">
-              <NextImage
-                src={emblemSrc}
+              <PublicImage
+                src={`${getPublicPath(`${emblemSrc}`)}`}
                 alt={emblemAlt}
                 fill
                 className="object-contain object-bottom"
