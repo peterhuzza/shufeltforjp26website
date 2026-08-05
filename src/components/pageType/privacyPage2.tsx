@@ -95,7 +95,7 @@ export default function PrivacyPolicy({
 
           {/* Back Home Button */}
           <div className="pt-8 border-t border-inferno">
-            <Button variant='primary' href="/" className="px-5 py-3 inline-block relative z-10">
+            <Button variant='secondary' href="/" className="px-5 py-3 inline-block relative z-10">
               ← Return to Home
             </Button>
           </div>
