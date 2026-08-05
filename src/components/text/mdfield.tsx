@@ -1,7 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import NextImage from 'next/image';
 import React from 'react';
-
 export interface MarkdownFieldProps {
   content: string | string[];
   className?: string;
@@ -32,7 +31,7 @@ const StyledImage = ({ src, alt }: { src: string; alt?: string }) => {
   return (
     <span className="my-8 w-full flex justify-center">
       <NextImage
-        src={safeSrc}
+        src={`${prefix}/${safeSrc}`}
         alt={alt || "Article Image"}
         width={1200}
         height={675}
