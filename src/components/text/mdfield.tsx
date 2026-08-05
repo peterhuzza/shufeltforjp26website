@@ -6,7 +6,7 @@ export interface MarkdownFieldProps {
   className?: string;
 }
 
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const prefix = 'nextjstemtemplate' // process.env.NEXT_PUBLIC_BASE_PATH || '';
 // Helper: Auto-fix paths and validate safe protocols
 const getSafeSrc = (src: string) => {
   if (!src) return "";
