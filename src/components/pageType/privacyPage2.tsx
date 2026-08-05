@@ -29,7 +29,7 @@ export default function PrivacyPolicy({
           <h2 className="text-amber-800 font-bold mb-2">⚠️ Important: Action Required</h2>
           <p className="text-amber-700">
             This is a placeholder privacy policy. Because your business or campaign may have unique data
-            handling requirements, <strong>you must create and provide your own official privacy policy</strong>
+            handling requirements, <strong>you must create and provide your own official privacy policy </strong>
             to remain compliant with local and international laws (such as GDPR, CCPA, etc.).
           </p>
           <p className="text-amber-700 mt-4 text-sm">

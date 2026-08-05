@@ -38,7 +38,8 @@ export default function GenPage() {
       "## Core Architecture",
       "- **Modularity**: Every page is built from atomic `subcomponents`.",
       "- **Flexibility**: Swap layouts, headers, and footers instantly.",
-      "- **Performance**: Powered by Next.js App Router and optimized for speed."
+      "- **Performance**: Powered by Next.js App Router and optimized for speed.",
+      "## joe biden"
     ]
   },
   "campaignBadge": "",
