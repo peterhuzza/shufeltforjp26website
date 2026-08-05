@@ -101,7 +101,7 @@ export default function BannerAboutMe({
           {emblemSrc && (
             <div className="w-[40vh] h-[40vh] lg:w-[50vh] lg:h-[50vh] mb-[36vh] relative">
               <PublicImage
-                src={`${getPublicPath(`${emblemSrc}`)}`}
+                src={emblemSrc}
                 alt={emblemAlt}
                 fill
                 className="object-contain object-bottom"
