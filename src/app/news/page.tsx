@@ -25,7 +25,7 @@ export default function GenPage() {
   "email": "srs@shufeltforjp5.com",
   "facebookUrl": "https://www.facebook.com/shufelt.for.justice.of.the.peace",
   "instagramUrl": "test",
-  "tiktokUrl": "test",
+  "tiktokUrl": "https://www.tiktok.com/@stephanieshufelt6",
   "blueskyUrl": "https://bsky.app/profile/libinar.bsky.social",
   "twitterUrl": "test",
   "volunteerUrl": "https://secure.actblue.com/donate/shufeltforjp5"
