@@ -38,7 +38,7 @@ export default function RootLayout({
             email="jamesshufelt@gmail.com"
             facebookUrl="test"
             instagramUrl="test"
-            tiktokUrl="test"
+            tiktokUrl="test2"
             twitterUrl="test"
             blueskyUrl="blueksystuff"
             volunteerUrl="test"

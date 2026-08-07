@@ -5,7 +5,7 @@ interface PublicImageProps extends Omit<ImageProps, 'src'> {
   src: string | StaticImageData;
 }
 
-export const PublicImage = ({ src, width, height, ...props }: PublicImageProps) => {
+export const PublicImage = ({ src, ...props }: PublicImageProps) => {
   const finalSrc = typeof src === 'string' ? getPublicPath(src) : src;
 
   return (

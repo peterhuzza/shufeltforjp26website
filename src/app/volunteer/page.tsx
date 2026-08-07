@@ -33,7 +33,7 @@ export default function GenPage() {
   "email": "jamesshufelt@gmail.com",
   "facebookUrl": "test",
   "instagramUrl": "test",
-  "tiktokUrl": "test",
+  "tiktokUrl": "test2",
   "blueskyUrl": "blueksystuff",
   "twitterUrl": "test",
   "volunteerUrl": "test"

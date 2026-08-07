@@ -22,7 +22,7 @@ export default function GenPage() {
   "candidateName": "Stephane Shufelt",
   "facebookUrl": "test",
   "instagramUrl": "test",
-  "tiktokUrl": "test",
+  "tiktokUrl": "test2",
   "blueskyUrl": "blueksystuff",
   "twitterUrl": "test",
   "volunteerUrl": "test"
