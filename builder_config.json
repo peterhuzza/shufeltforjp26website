@@ -13,7 +13,7 @@
     "selections": {
         "home": "homePage1",
         "about": "aboutMePage1",
-        "news": "aboutMePage1",
+        "news": "newsPage1",
         "privacy": "privacyPage1",
         "volunteer": "volunteerPage1"
     },
@@ -96,11 +96,11 @@
         "news": {
             "pageTitle": "Announcements",
             "pageSubtitle": "",
-            "pageImage": "",
+            "pageImage": "landscape8726.jpg",
             "items": [],
             "title": "",
             "content": [],
-            "imageSrc": "",
+            "imageSrc": "landscape8726.jpg",
             "campaignBadge": "",
             "imagealt": "",
             "imageCap": ""

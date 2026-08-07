@@ -12,11 +12,11 @@ export default function GenPage() {
   const props = {
   "pageTitle": "Announcements",
   "pageSubtitle": "",
-  "pageImage": "/",
+  "pageImage": "/landscape8726.jpg",
   "items": [],
   "title": "",
   "content": [],
-  "imageSrc": "/",
+  "imageSrc": "/landscape8726.jpg",
   "campaignBadge": "",
   "imagealt": "/",
   "imageCap": "/",
