@@ -29,10 +29,10 @@ export default function Midsection({
           md:flex-row (Desktop): Places them side-by-side 
         */}
           <div className="flex flex-col md:flex-row items-stretch">
-            <div className="relative flex items-center justify-start bg-transparent w-full md:w-1/2 px-5 overflow-hidden">
+            <div className="hidden md:flex relative items-center justify-center bg-transparent w-1/2 px-5 overflow-hidden  h-[80vh]  ">
               <PublicImage className='object-center object-contain shadow-2xl' alt={LeftImageAltText} src={LeftImage} fill />
             </div>
-            <div className="flex w-full md:w-1/2 px-5">
+            <div className="flex items-center justify-center w-full md:w-1/2 px-5">
               <Textfield className='' content={topRight} />
             </div>
           </div>
