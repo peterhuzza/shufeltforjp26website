@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  basePath: "/nextjstemtemplate", // Add this line
+  basePath: "/shufeltforjp26website", // Add this line
   allowedDevOrigins: ["0.0.0.0"],
 };
 
