@@ -23,42 +23,63 @@ const Button: React.FC<ButtonProps> = ({
 
 
   const variants = {
+
     primary: `
-      bg-btn-base-start-primary 
+      bg-gradient-to-b from-btn-base-start-primary to-btn-base-end-primary 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-md transition-all duration-300 
-      hover:shadow-lg hover:-translate-y-0.5
-      active:scale-[0.98] 
-      rounded-sm
+      shadow-xl transition-all duration-300 
+      hover:from-btn-hover-start-primary hover:to-btn-hover-end-primary 
+      active:scale-[0.98]  
+      relative overflow-hidden 
+      after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_15%,_rgba(255,255,255,0.12)_0%,_transparent_60%)] 
     `,
     secondary: `
-      bg-btn-base-start-secondary 
+      bg-gradient-to-b from-[#22227F] to-[#000022] 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-md transition-all duration-300 
-      hover:bg-btn-hover-start-secondary 
-      active:scale-[0.98] 
-      rounded-sm
+      shadow-xl transition-all duration-300 
+      hover:from-[#333390] hover:to-[#222244] 
+      active:scale-[0.98] rounded-none 
+      relative overflow-hidden 
+      after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_15%,_rgba(255,255,255,0.12)_0%,_transparent_60%)] 
+      after:pointer-events-none
     `,
-    mobile: "p-2 text-brand-color2 hover:bg-brand-color2/10 transition-colors",
-    outline: "border-2 border-brand-color text-brand-color hover:bg-brand-color/5 focus:ring-brand-color",
+    mobile: "p-2 text-brand-blue2 hover:bg-plat transition-colors",
+    outline: "border-2 border-brand-blue text-brand-blue hover:bg-brand-blue/5 focus:ring-brand-blue",
     danger: `
-      bg-btn-base-start-danger 
+      bg-gradient-to-b from-btn-base-start-danger to-btn-base-end-danger 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-md transition-all duration-300 
-      hover:shadow-lg hover:-translate-y-0.5
-      active:scale-[0.98] 
-      rounded-sm
+      shadow-xl transition-all duration-300 
+      hover:from-btn-hover-start-danger hover:to-btn-hover-end-danger 
+      active:scale-[0.98] rounded-none 
+      relative overflow-hidden 
+      after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_20%,_rgba(255,200,200,0.20)_0%,_transparent_70%)] 
+      after:pointer-events-none
     `,
     refined: `
-      bg-brand-color1 
+      bg-gradient-to-b from-btn-base-start-primary to-btn-base-end-primary 
       text-white text-[11px] font-medium tracking-[0.25em] uppercase 
-      shadow-md transition-all duration-300 
-      hover:shadow-lg hover:-translate-y-0.5
-      active:scale-[0.98] 
-      rounded-sm
+      shadow-xl transition-all duration-300 
+      hover:from-btn-hover-start-primary hover:to-btn-hover-end-primary 
+      active:scale-[0.98] rounded-none 
+      relative overflow-hidden 
+      after:absolute after:inset-0 after:bg-[radial-gradient(circle_at_50%_15%,_rgba(255,255,255,0.12)_0%,_transparent_60%)] 
+      after:pointer-events-none
     `,
-    header: "px-4 flex justify-center items-center bg-transparent border-t-2 border-brand-color1 border-x border-black text-base text-white transition-all duration-300 hover:border-t-inferno",
+
+    header: "relative px-4 overflow-hidden flex justify-center items-center bg-transparent border-t-2 border-brand-color1 border-x border-black text-base text-white transition-all duration-300 hover:border-t-inferno after:absolute after:inset-0 after:pointer-events-none after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0)_0%,_transparent_60%)] hover:after:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0.25)_0%,_transparent_60%)]",
+    danger2: `
+      bg-btn-base-danger2
+      text-white text-[11px] font-medium tracking-[0.25em] uppercase 
+      shadow-xl transition-all duration-300 
+      hover:bg-btn-hover-danger2
+      active:scale-[0.98] rounded-none 
+      relative overflow-hidden isolate
+      before:content-[''] before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(circle_at_50%_50%,_rgba(255,255,255,0.2)_0%,_transparent_70%)] before:-z-20
+      after:content-[''] after:absolute after:inset-0 after:pointer-events-none after:transition-all after:duration-300 after:bg-[radial-gradient(ellipse_200%_100%_at_bottom,_var(--color-btn-curve-danger2)_45%,_transparent_45.1%)] after:-z-10
+      hover:after:bg-[radial-gradient(ellipse_200%_100%_at_bottom,_var(--color-btn-curve-danger2-hover)_45%,_transparent_45.1%)]
+    `,
     hidden: "hover:text-underline hover:text-inferno transition"
+
   };
   const combinedStyles = `${variants[variant]} ${className} `;
 

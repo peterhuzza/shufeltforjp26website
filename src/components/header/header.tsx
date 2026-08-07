@@ -101,7 +101,7 @@ export default function Header({ navLinks, candidateName, donationUrl }: HeaderP
                   key={name}
                   href={href}
                   variant="primary"
-                  className="flex justify-center items-center py-3 block w-full text-center text-base font-medium text-brand-color2 hover:opacity-80 transition-opacity"
+                  className="flex justify-center items-center py-3 block w-full text-center text-base font-medium text-brand-color1 hover:opacity-80 transition-opacity"
                 >
                   {name}
                 </Button>

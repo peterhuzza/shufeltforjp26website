@@ -9,8 +9,8 @@ import Footer from "@/components/footer/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jane Doe - Official Site",
-  description: "Official campaign site for Jane Doe.",
+  title: "Stephane Shufelt - Official Site",
+  description: "Official campaign site for Stephane Shufelt.",
 };
 
 export default function RootLayout({
@@ -24,8 +24,8 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen bg-white text-gray-900 font-sans">
 
           <Header
-            navLinks={ {'Home': '/', 'News': '/news'} }
-            candidateName="Jane Doe"
+            navLinks={ {'Home': '/', 'About': '/about', 'News': '/news', 'Volunteer': '/volunteer'} }
+            candidateName="Stephane Shufelt"
             donationUrl="/donate"
           />
 
@@ -34,14 +34,14 @@ export default function RootLayout({
           </main>
 
           <Footer
-            candidateName="Jane Doe"
-            email=""
-            facebookUrl=""
-            instagramUrl=""
-            tiktokUrl=""
-            twitterUrl=""
-            blueskyUrl=""
-            volunteerUrl=""
+            candidateName="Stephane Shufelt"
+            email="jamesshufelt@gmail.com"
+            facebookUrl="test"
+            instagramUrl="test"
+            tiktokUrl="test"
+            twitterUrl="test"
+            blueskyUrl="blueksystuff"
+            volunteerUrl="test"
           />
 
         </div>

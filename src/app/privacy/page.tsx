@@ -1,25 +1,31 @@
 /**
  * AUTO-GENERATED FILE. Route: /privacy
  */
-import Privacypage2 from "@/components/pageType/privacyPage2";
+import Privacypage1 from "@/components/pageType/privacyPage1";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jane Doe - Privacy",
+  title: "Stephane Shufelt - Privacy",
 };
 
 export default function GenPage() {
   const props = {
-  "campaignName": "Jane for Council",
-  "email": "",
+  "title": "",
+  "content": [],
+  "imageSrc": "/",
+  "campaignName": "Stephanie Shufelt for JP 5",
+  "email": "jamesshufelt@gmail.com",
   "lastUpdated": "",
-  "candidateName": "Jane Doe",
-  "facebookUrl": "",
-  "instagramUrl": "",
-  "tiktokUrl": "",
-  "blueskyUrl": "",
-  "twitterUrl": "",
-  "volunteerUrl": ""
+  "campaignBadge": "",
+  "imagealt": "/",
+  "imageCap": "/",
+  "candidateName": "Stephane Shufelt",
+  "facebookUrl": "test",
+  "instagramUrl": "test",
+  "tiktokUrl": "test",
+  "blueskyUrl": "blueksystuff",
+  "twitterUrl": "test",
+  "volunteerUrl": "test"
 };
-  return <Privacypage2 {...props} />;
+  return <Privacypage1 {...props} />;
 }

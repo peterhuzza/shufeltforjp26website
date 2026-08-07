@@ -25,6 +25,8 @@ interface AboutMeData {
 
 
 interface MidsectionData {
+  topLeft: string | string[];
+  topRight: string | string[];
   mapSrc: string;
   content: string | string[];
 }
@@ -60,7 +62,7 @@ export default function Home({ aboutMe, midsectionContent }: HomeProps) {
 
       <div className="border-t-2 bg-gray-50 border-inferno">
         {/* 2. ABOUT/AGENDA SECTION */}
-        <Midsection mapSrc={midsectionContent.mapSrc} content={midsectionContent.content} />
+        <Midsection topLeft={midsectionContent.topLeft} topRight={midsectionContent.topRight} mapSrc={midsectionContent.mapSrc} content={midsectionContent.content} />
       </div>
       {/* Add more sections here as the site grows */}
     </main>

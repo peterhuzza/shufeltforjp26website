@@ -38,7 +38,7 @@ const StyledImage = ({ src, alt }: { src: string; alt?: string }) => {
         width={1200}
         height={675}
         sizes="(max-width: 768px) 100vw, 1200px"
-        className="rounded-xl shadow-lg max-h-[500px] w-auto h-auto object-contain bg-slate-50"
+        className="shadow-lg max-h-[500px] w-auto h-auto object-contain bg-slate-50"
       />
     </span>
   );

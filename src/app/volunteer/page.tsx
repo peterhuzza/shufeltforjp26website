@@ -5,31 +5,38 @@ import Volunteerpage1 from "@/components/pageType/volunteerPage1";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jane Doe - Volunteer",
+  title: "Stephane Shufelt - Volunteer",
 };
 
 export default function GenPage() {
   const props = {
-  "badgeText": "text",
-  "heroTitle": "(Templat example) Volunteer",
-  "heroSubtitle": "page",
-  "imageSrc": "/image.jpg",
-  "altImage": "image 1",
-  "ctaTitle": "title",
-  "ctaDescription": "discription",
-  "ctaButtonText": "button",
-  "ctaButtonLink": "/",
-  "iconImage": "/image2.jpg",
-  "pageImage": "image 2",
-  "candidateName": "Jane Doe",
-  "campaignName": "Jane for Council",
-  "email": "",
-  "facebookUrl": "",
-  "instagramUrl": "",
-  "tiktokUrl": "",
-  "blueskyUrl": "",
-  "twitterUrl": "",
-  "volunteerUrl": ""
+  "title": "",
+  "content": [],
+  "imageSrc": "/banner.jpg",
+  "badgeText": "alt",
+  "heroTitle": "",
+  "heroSubtitle": "",
+  "aboutTitle": "",
+  "aboutContent": [],
+  "ctaTitle": "come and volunteer for us!",
+  "ctaDescription": "",
+  "ctaButtonText": "",
+  "ctaButtonLink": "",
+  "iconImage": "/emblem.png",
+  "pageImage": "/",
+  "campaignBadge": "",
+  "imagealt": "/",
+  "imageCap": "/",
+  "altImage": "Volunteer with us!",
+  "candidateName": "Stephane Shufelt",
+  "campaignName": "Stephanie Shufelt for JP 5",
+  "email": "jamesshufelt@gmail.com",
+  "facebookUrl": "test",
+  "instagramUrl": "test",
+  "tiktokUrl": "test",
+  "blueskyUrl": "blueksystuff",
+  "twitterUrl": "test",
+  "volunteerUrl": "test"
 };
   return <Volunteerpage1 {...props} />;
 }

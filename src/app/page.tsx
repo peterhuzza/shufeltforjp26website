@@ -5,53 +5,70 @@ import Homepage1 from "@/components/pageType/homePage1";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jane Doe - Home",
+  title: "Stephane Shufelt - Home",
 };
 
 export default function GenPage() {
   const props = {
-    "title": "",
-    "content": [],
-    "imageSrc": "/",
-    "aboutMe": {
-      "moto": "Start building your website!",
-      "backgroundSrc": "/image2.jpg",
-      "imageSrc": "/image.jpg",
-      "altText": "",
-      "emblemSrc": "/image3.jpg",
-      "emblemAlt": "",
-      "textunderbutton": "",
-      "primaryLinkHref": "",
-      "primaryLinkLabel": "",
-      "secondaryLinkHref": "",
-      "secondaryLinkLabel": ""
-    },
-    "midsectionContent": {
-      "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357974.2440515147!2d-94.76853192267427!3d34.72354462866459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d29e3f743f2761%3A0xa405693effdfd2d0!2sArkansas!5e0!3m2!1sen!2sus!4v1785828546140!5m2!1sen!2sus",
-      "content": [
-        "# Getting Started with the Configurator",
-        "Welcome to the **dynamic routing engine**. This project is designed to give you ultimate control over your site structure without manual file management.",
-        "## How to Build Your Site",
-        "1. **Configure**: Use the configurator to define your site's routes and structure. Routes are automatically generated in `src/app`.",
-        "2. **Customize**: Edit the UI components in `src/components` to match your brand identity.",
-        "3. **Deploy**: Use the `Makefile` or `Docker` setup to manage your production environment.",
-        "## Core Architecture",
-        "- **Modularity**: Every page is built from atomic `subcomponents`.",
-        "- **Flexibility**: Swap layouts, headers, and footers instantly.",
-        "- **Performance**: Powered by Next.js App Router and optimized for speed."
-      ]
-    },
-    "campaignBadge": "",
-    "imageCap": "/",
-    "candidateName": "Jane Doe",
-    "campaignName": "Jane for Council",
-    "email": "",
-    "facebookUrl": "",
-    "instagramUrl": "",
-    "tiktokUrl": "",
-    "blueskyUrl": "",
-    "twitterUrl": "",
-    "volunteerUrl": ""
-  };
+  "title": "",
+  "content": [],
+  "imageSrc": "/",
+  "aboutMe": {
+    "backgroundSrc": "banner.jpg ",
+    "imageSrc": "/banner.jpg",
+    "altText": "canidate photo",
+    "emblemSrc": "/emblem.png",
+    "emblemAlt": "emblem",
+    "textunderbutton": "",
+    "primaryLinkHref": "about",
+    "primaryLinkLabel": "About",
+    "secondaryLinkHref": "#agenda",
+    "secondaryLinkLabel": "Agenda",
+    "moto": "We Deserve Better."
+  },
+  "midsectionContent": {
+    "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1158.1777489322867!2d-94.1393751693038!3d36.17367285907689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96b4e855dd46f%3A0x66c30db1f3a79ff!2sTaqueria%20Guanajuato%20Bar%20%26%20Grill!5e0!3m2!1sen!2sus!4v1782920908083!5m2!1sen!2sus",
+    "content": [
+      "# Visit My Office Hours",
+      "I host weekly office hours every Sunday from 2pm-5pm at the Washington County Democratic Headquarters. I invite you to come by to share your concerns and discuss your ideas for our community.",
+      "**Washington County Democratic Headquarters**",
+      "1102 S. Thompson St",
+      "Springdale, AR, USA",
+      "479-553-9008",
+      "### Weekly Schedule",
+      "- **Sunday**: 2:00 pm – 5:00 pm",
+      "- **Monday – Saturday**: Closed"
+    ],
+    "topLeft": [
+      "[image](about.jpg)"
+    ],
+    "topRight": [
+      "# My Agenda for Justice of the Peace",
+      "As your Justice of the Peace, my primary goal is to serve the people of Washington County with integrity, transparency, and a commitment to fair and timely justice. I believe that every resident deserves to be heard and every concern deserves a thoughtful response.",
+      "### Core Priorities:",
+      "#### 1. Community Engagement & Accessibility",
+      "I will make it my priority to be accessible to everyone in our community. By maintaining regular office hours and actively seeking out feedback from residents, I will ensure that your concerns are understood and addressed promptly.",
+      "#### 2. Fair and Efficient Dispute Resolution",
+      "Justice should be timely. I am committed to handling civil disputes with a focus on fair, common-sense resolutions that help our neighbors move forward. I will work to ensure that the process is straightforward and easy to navigate for all parties involved.",
+      "#### 3. Clear Communication",
+      "The legal system can be confusing. I will strive to provide clear, honest, and easy-to-understand information about the roles and services of the Justice of the Peace office, ensuring that residents feel empowered and informed.",
+      "#### 4. Integrity & Accountability",
+      "I will uphold the highest standards of ethics and accountability. My focus will always be on serving the community's interests and upholding the law with honesty and respect.",
+      "*Let’s work together to keep Washington County a fair and thriving place to live.*"
+    ]
+  },
+  "campaignBadge": "",
+  "imageCap": "/",
+  "imagealt": "/",
+  "candidateName": "Stephane Shufelt",
+  "campaignName": "Stephanie Shufelt for JP 5",
+  "email": "jamesshufelt@gmail.com",
+  "facebookUrl": "test",
+  "instagramUrl": "test",
+  "tiktokUrl": "test",
+  "blueskyUrl": "blueksystuff",
+  "twitterUrl": "test",
+  "volunteerUrl": "test"
+};
   return <Homepage1 {...props} />;
 }

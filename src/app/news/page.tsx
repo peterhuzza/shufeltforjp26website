@@ -10,32 +10,25 @@ export const metadata: Metadata = {
 
 export default function GenPage() {
   const props = {
-  "pageTitle": "Blogging functionality",
-  "pageSubtitle": "test",
-  "pageImage": "/image.jpg",
-  "items": [
-    {
-      "key": "test",
-      "linkHref": "/news/test",
-      "title": "test",
-      "date": "2026-6-2",
-      "summary": "test"
-    }
-  ],
+  "pageTitle": "Announcements",
+  "pageSubtitle": "",
+  "pageImage": "/",
+  "items": [],
   "title": "",
   "content": [],
   "imageSrc": "/",
   "campaignBadge": "",
+  "imagealt": "/",
   "imageCap": "/",
-  "candidateName": "Jane Doe",
-  "campaignName": "Jane for Council",
-  "email": "",
-  "facebookUrl": "",
-  "instagramUrl": "",
-  "tiktokUrl": "",
-  "blueskyUrl": "",
-  "twitterUrl": "",
-  "volunteerUrl": ""
+  "candidateName": "Stephane Shufelt",
+  "campaignName": "Stephanie Shufelt for JP 5",
+  "email": "jamesshufelt@gmail.com",
+  "facebookUrl": "test",
+  "instagramUrl": "test",
+  "tiktokUrl": "test",
+  "blueskyUrl": "blueksystuff",
+  "twitterUrl": "test",
+  "volunteerUrl": "test"
 };
   return <Newspage1 {...props} />;
 }

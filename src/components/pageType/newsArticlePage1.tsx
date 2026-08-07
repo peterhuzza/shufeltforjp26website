@@ -24,7 +24,7 @@ export default function NewsArticlePage1({
 
   return (
     // 1. Added 'flex' here so 'flex-col' and 'items-center' actually work
-    <main className="flex flex-col min-h-screen bg-brand-color2 py-20 px-6 items-center ">
+    <main className="flex flex-col min-h-screen bg-white py-20 px-6 items-center ">
       <ArticleHeader title={articleTitle} date={publishDate} />
 
       {/* 2. Addedw-full' and 'mx-auto', removed broken flex classes */}

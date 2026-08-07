@@ -1,19 +1,20 @@
 {
     "global_data": {
-        "candidateName": "Jane Doe",
-        "campaignName": "Jane for Council",
-        "email": "",
-        "facebookUrl": "",
-        "instagramUrl": "",
-        "tiktokUrl": "",
-        "blueskyUrl": "",
-        "twitterUrl": "",
-        "volunteerUrl": ""
+        "candidateName": "Stephane Shufelt",
+        "campaignName": "Stephanie Shufelt for JP 5",
+        "email": "jamesshufelt@gmail.com",
+        "facebookUrl": "test",
+        "instagramUrl": "test",
+        "tiktokUrl": "test",
+        "blueskyUrl": "blueksystuff",
+        "twitterUrl": "test",
+        "volunteerUrl": "test"
     },
     "selections": {
         "home": "homePage1",
-        "news": "newsPage1",
-        "privacy": "privacyPage2",
+        "about": "aboutMePage1",
+        "news": "aboutMePage1",
+        "privacy": "privacyPage1",
         "volunteer": "volunteerPage1"
     },
     "route_data": {
@@ -21,103 +22,147 @@
             "title": "",
             "content": [],
             "imageSrc": "",
-            "aboutMe.moto": "Start building your website!",
-            "aboutMe.backgroundSrc": "image2.jpg",
-            "aboutMe.imageSrc": "image.jpg",
-            "aboutMe.altText": "",
-            "aboutMe.emblemSrc": "image3.jpg",
-            "aboutMe.emblemAlt": "",
+            "aboutMe.backgroundSrc": "banner.jpg ",
+            "aboutMe.imageSrc": "banner.jpg",
+            "aboutMe.altText": "canidate photo",
+            "aboutMe.emblemSrc": "emblem.png",
+            "aboutMe.emblemAlt": "emblem",
             "aboutMe.textunderbutton": "",
-            "aboutMe.primaryLinkHref": "",
-            "aboutMe.primaryLinkLabel": "",
-            "aboutMe.secondaryLinkHref": "",
-            "aboutMe.secondaryLinkLabel": "",
-            "midsectionContent.mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357974.2440515147!2d-94.76853192267427!3d34.72354462866459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d29e3f743f2761%3A0xa405693effdfd2d0!2sArkansas!5e0!3m2!1sen!2sus!4v1785828546140!5m2!1sen!2sus",
+            "aboutMe.primaryLinkHref": "about",
+            "aboutMe.primaryLinkLabel": "About",
+            "aboutMe.secondaryLinkHref": "#agenda",
+            "aboutMe.secondaryLinkLabel": "Agenda",
+            "midsectionContent.mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1158.1777489322867!2d-94.1393751693038!3d36.17367285907689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96b4e855dd46f%3A0x66c30db1f3a79ff!2sTaqueria%20Guanajuato%20Bar%20%26%20Grill!5e0!3m2!1sen!2sus!4v1782920908083!5m2!1sen!2sus",
             "midsectionContent.content": [
-                "# Getting Started with the Configurator",
-                "Welcome to the **dynamic routing engine**. This project is designed to give you ultimate control over your site structure without manual file management.",
-                "## How to Build Your Site",
-                "1. **Configure**: Use the configurator to define your site's routes and structure. Routes are automatically generated in `src/app`.",
-                "2. **Customize**: Edit the UI components in `src/components` to match your brand identity.",
-                "3. **Deploy**: Use the `Makefile` or `Docker` setup to manage your production environment.",
-                "## Core Architecture",
-                "- **Modularity**: Every page is built from atomic `subcomponents`.",
-                "- **Flexibility**: Swap layouts, headers, and footers instantly.",
-                "- **Performance**: Powered by Next.js App Router and optimized for speed."
+                "# Visit My Office Hours",
+                "I host weekly office hours every Sunday from 2pm-5pm at the Washington County Democratic Headquarters. I invite you to come by to share your concerns and discuss your ideas for our community.",
+                "**Washington County Democratic Headquarters**",
+                "1102 S. Thompson St",
+                "Springdale, AR, USA",
+                "479-553-9008",
+                "### Weekly Schedule",
+                "- **Sunday**: 2:00 pm \u2013 5:00 pm",
+                "- **Monday \u2013 Saturday**: Closed"
             ],
+            "aboutMe.moto": "We Deserve Better.",
             "campaignBadge": "",
-            "imageCap": ""
+            "imageCap": "",
+            "imagealt": "",
+            "midsectionContent.topLeft": [
+                "[image](about.jpg)"
+            ],
+            "midsectionContent.topRight": [
+                "# My Agenda for Justice of the Peace",
+                "As your Justice of the Peace, my primary goal is to serve the people of Washington County with integrity, transparency, and a commitment to fair and timely justice. I believe that every resident deserves to be heard and every concern deserves a thoughtful response.",
+                "### Core Priorities:",
+                "#### 1. Community Engagement & Accessibility",
+                "I will make it my priority to be accessible to everyone in our community. By maintaining regular office hours and actively seeking out feedback from residents, I will ensure that your concerns are understood and addressed promptly.",
+                "#### 2. Fair and Efficient Dispute Resolution",
+                "Justice should be timely. I am committed to handling civil disputes with a focus on fair, common-sense resolutions that help our neighbors move forward. I will work to ensure that the process is straightforward and easy to navigate for all parties involved.",
+                "#### 3. Clear Communication",
+                "The legal system can be confusing. I will strive to provide clear, honest, and easy-to-understand information about the roles and services of the Justice of the Peace office, ensuring that residents feel empowered and informed.",
+                "#### 4. Integrity & Accountability",
+                "I will uphold the highest standards of ethics and accountability. My focus will always be on serving the community's interests and upholding the law with honesty and respect.",
+                "*Let\u2019s work together to keep Washington County a fair and thriving place to live.*"
+            ]
+        },
+        "about": {
+            "title": "About Me",
+            "content": [
+                "I am a wife and mom of three who works in health care as a registrar. My family and I moved to Arkansas in 2021 from the Pacific Northwest as an adventure and for a change of pace from living and working in the Portland metro area. I instantly fell in love with NWA. My boys have thrived in Springdale Public Schools, and my oldest is a student at the University of Arkansas. I\u2019m grateful for the opportunities this move has afforded us and I want to serve my community in a meaningful way.",
+                "I believe that the most important thing a representative can do is to listen to their constituents and bring their concerns to the table they\u2019ve been elected to sit at. I have never run for public office, and I won\u2019t be at all offended if people don\u2019t vote for me. What I can promise is this: If you trust me enough to vote for me for Justice of the Peace, I will make it my number one priority to hear what you have to say and act on it. I will work diligently for you."
+            ],
+            "imageSrc": "about.jpg",
+            "campaignBadge": "",
+            "imageCap": "",
+            "aboutMe.moto": "We deserve better.",
+            "aboutMe.backgroundSrc": "",
+            "aboutMe.imageSrc": "",
+            "aboutMe.altText": "test2",
+            "aboutMe.emblemSrc": "emblem.jpg",
+            "aboutMe.emblemAlt": "test",
+            "aboutMe.textunderbutton": "",
+            "aboutMe.primaryLinkHref": "about",
+            "aboutMe.primaryLinkLabel": "About",
+            "aboutMe.secondaryLinkHref": "#agenda",
+            "aboutMe.secondaryLinkLabel": "Agenda",
+            "midsectionContent.mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1158.1777489322867!2d-94.1393751693038!3d36.17367285907689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96b4e855dd46f%3A0x66c30db1f3a79ff!2sTaqueria%20Guanajuato%20Bar%20%26%20Grill!5e0!3m2!1sen!2sus!4v1782920908083!5m2!1sen!2sus",
+            "midsectionContent.content": [
+                "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\" [link text](test)"
+            ],
+            "imagealt": "Canidate photo ",
+            "imageAlt": ""
         },
         "news": {
-            "pageTitle": "Blogging functionality",
-            "pageSubtitle": "test",
-            "pageImage": "image.jpg",
+            "pageTitle": "Announcements",
+            "pageSubtitle": "",
+            "pageImage": "",
             "items": [],
             "title": "",
             "content": [],
             "imageSrc": "",
             "campaignBadge": "",
+            "imagealt": "",
             "imageCap": ""
         },
         "privacy": {
+            "title": "",
+            "content": [],
+            "imageSrc": "",
             "campaignName": "",
             "email": "",
-            "lastUpdated": ""
+            "lastUpdated": "",
+            "campaignBadge": "",
+            "imagealt": "",
+            "imageCap": ""
         },
         "volunteer": {
-            "badgeText": "text",
-            "heroTitle": "(Templat example) Volunteer",
-            "heroSubtitle": "page",
-            "imageSrc": "image.jpg",
-            "altImage": "image 1",
-            "ctaTitle": "title",
-            "ctaDescription": "discription",
-            "ctaButtonText": "button",
-            "ctaButtonLink": "/",
-            "iconImage": "image2.jpg",
-            "pageImage": "image 2"
+            "title": "",
+            "content": [],
+            "imageSrc": "banner.jpg",
+            "badgeText": "alt",
+            "heroTitle": "",
+            "heroSubtitle": "",
+            "aboutTitle": "",
+            "aboutContent": [],
+            "ctaTitle": "come and volunteer for us!",
+            "ctaDescription": "",
+            "ctaButtonText": "",
+            "ctaButtonLink": "",
+            "iconImage": "emblem.png",
+            "pageImage": "",
+            "campaignBadge": "",
+            "imagealt": "",
+            "imageCap": "",
+            "altImage": "Volunteer with us!"
         }
     },
     "route_names": {
         "1": "Home",
-        "2": "News",
-        "3": "privacy",
-        "4": "volunteer"
+        "2": "About",
+        "3": "News",
+        "4": "Privacy Page",
+        "5": "Volunteer"
     },
     "route_map": {
         "1": "home",
-        "2": "news",
-        "3": "privacy",
-        "4": "volunteer"
+        "2": "about",
+        "3": "news",
+        "4": "privacy",
+        "5": "volunteer"
     },
     "hidden": {
         "home": false,
         "tab-2": false,
-        "news": false,
         "tab-3": false,
-        "privacy": true,
         "tab-4": false,
-        "volunteer": true
+        "tab-5": false,
+        "about": false,
+        "news": false,
+        "privacy": true,
+        "volunteer": false,
+        "tab-6": false,
+        "coffee": false
     },
-    "articles": [
-        {
-            "slug": "test",
-            "title": "test",
-            "date": "2026-6-2",
-            "summary": [
-                "test"
-            ],
-            "content": [
-                "this is a test article",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat molestie tortor. Maecenas lacinia blandit nisl sed dapibus. Ut vel odio sodales arcu gravida eleifend in eget nibh. Nunc ultricies, risus et mattis blandit, lectus turpis porta lectus, ac facilisis massa odio et mi. Maecenas nibh urna, ullamcorper at nulla a, finibus tempus nunc. Suspendisse nec tempor odio. Morbi sollicitudin mauris nisi, non semper leo condimentum ut. Phasellus lobortis bibendum nunc. Vestibulum dui urna, porttitor in pellentesque eu, aliquet sed est. Donec suscipit nisi ac iaculis ultricies. Nullam congue nunc quis libero ultrices, id accumsan eros sodales. Aliquam erat volutpat.",
-                "[image1](image.jpg)",
-                "Praesent ante est, lacinia sed tincidunt feugiat, euismod non libero. Donec semper sed metus maximus hendrerit. Sed et tellus id erat sollicitudin volutpat. Ut egestas congue risus porta mollis. Integer sed quam vehicula, pellentesque nulla quis, dapibus massa. Donec ac pulvinar leo. Phasellus turpis lacus, ultricies et aliquet eu, ultricies in nisi. Phasellus nec tellus ut felis fringilla blandit.",
-                "[image2](image2.jpg)",
-                "Maecenas venenatis interdum lorem, eu condimentum turpis ullamcorper quis. Sed tristique, justo sit amet hendrerit congue, tellus lectus ornare velit, non auctor elit nunc nec dolor. Integer at eleifend nibh. Duis lobortis lacinia nisl, nec sodales eros accumsan at. Ut pulvinar viverra purus, eget pellentesque arcu sollicitudin eu. Duis non suscipit magna, consectetur varius massa. Nam felis orci, interdum quis mattis at, porttitor nec erat. Ut erat ex, pellentesque non ex sit amet, iaculis maximus neque. Nulla euismod vel felis eget iaculis. Donec sodales bibendum nisl pellentesque sagittis.",
-                "[image3](image3.jpg)",
-                "In hac habitasse platea dictumst. Maecenas quam massa, finibus nec faucibus et, feugiat et orci. Curabitur ante nunc, tristique quis urna in, placerat tristique ante. Duis at metus a augue rhoncus laoreet at eu erat. Etiam magna felis, posuere eget magna in, luctus lobortis sapien. Duis metus odio, commodo vitae eleifend a, lacinia a mauris. Maecenas efficitur ultricies rutrum. Phasellus eros dolor, aliquet eget orci facilisis, tempor fermentum tellus. Suspendisse quis felis non nunc dapibus vestibulum. Proin mattis eu augue vitae tempor. Aenean fringilla est sed luctus hendrerit. Phasellus ut suscipit sem. Suspendisse potenti. Nam vel diam nec nulla varius pellentesque eu at arcu.",
-                "Nulla venenatis lectus metus, id condimentum ligula aliquet nec. Vestibulum vitae tortor mollis, accumsan neque sollicitudin, ultrices magna. Duis malesuada sagittis sapien in tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin ultricies lacus nec sollicitudin eleifend. Donec maximus libero quis nisl feugiat gravida. Sed vehicula purus tellus, a fermentum urna aliquet et. Nunc faucibus lobortis mauris, ut aliquam lectus hendrerit non. Maecenas consectetur id orci nec vestibulum. Suspendisse ultricies nisi dolor, id vulputate lectus egestas id."
-            ]
-        }
-    ]
+    "articles": []
 }

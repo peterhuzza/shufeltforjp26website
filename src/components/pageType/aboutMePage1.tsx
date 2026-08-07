@@ -5,12 +5,18 @@ interface AboutPageProps {
   title: string;
   content: string[];
   imageSrc: string;
+  campaignBadge: string;
+  imagealt: string;
+  imageCap: string;
 }
 
 export default function AboutMeEditorial({
   title,
   content,
   imageSrc,
+  campaignBadge,
+  imagealt,
+  imageCap,
 }: AboutPageProps) {
   return (
     <main className="flex-grow bg-white">
@@ -39,12 +45,12 @@ export default function AboutMeEditorial({
             {/* IMAGE COLUMN (Spans 5 columns) */}
             <div className="lg:col-span-5 mt-12 lg:mt-0 relative">
               {/* Decorative colored box behind image */}
-              <div className="hidden lg:block absolute top-4 left-4 w-full h-full bg-blue-100 rounded-lg -z-10 transform translate-x-2 translate-y-2" />
+              <div className="hidden lg:block absolute top-4 left-4 w-full h-full bg-blue-100  -z-10 transform translate-x-2 translate-y-2" />
 
-              <div className="relative rounded-lg shadow-2xl overflow-hidden aspect-[3/4]">
+              <div className="relative shadow-2xl overflow-hidden aspect-[3/4]">
                 <img
                   src={imageSrc}
-                  alt="Candidate Portrait"
+                  alt={imagealt}
                   className="object-cover w-full h-full"
                 />
               </div>

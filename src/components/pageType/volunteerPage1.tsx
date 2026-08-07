@@ -4,8 +4,6 @@ import { PublicImage } from '@/utils/getImage';
 
 interface VolunteerPageProps {
   badgeText: string;
-  heroTitle: string;
-  heroSubtitle: string;
   imageSrc: string;
   altImage: string;
   ctaTitle: string;
@@ -13,13 +11,10 @@ interface VolunteerPageProps {
   ctaButtonText: string;
   ctaButtonLink: string;
   iconImage: string;
-  pageImage: string;
 }
 
 export default function VolunteerPage1({
   badgeText,
-  heroTitle,
-  heroSubtitle,
   imageSrc,
   altImage,
   ctaTitle,
@@ -27,13 +22,12 @@ export default function VolunteerPage1({
   ctaButtonText,
   ctaButtonLink,
   iconImage,
-  pageImage
 }: VolunteerPageProps) {
 
   return (
-    <main className="min-h-screen bg-brand-color2 flex flex-col">
-      <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 w-full">
-        <div className="bg-brand-color2 rounded-xl shadow-lg overflow-hidden flex flex-col lg:flex-row border border-btn-base-start-secondary">
+    <main className=" justify-center h-[70vh] min-h-screen bg-white flex flex-col">
+      <div className="max-w-6xl mx-auto px-4 w-full">
+        <div className="bg-white shadow-lg overflow-hidden flex flex-col lg:flex-row border border-transparent">
 
           {/* LEFT COLUMN: Image content (Hidden on mobile) */}
           <div className="hidden md:block lg:w-2/3 relative h-[500px] md:h-[600px]">
@@ -46,22 +40,22 @@ export default function VolunteerPage1({
           </div>
 
           {/* RIGHT COLUMN: CTA Sidebar */}
-          <div className="p-8 md:p-12 lg:w-1/3 bg-btn-base-start-secondary flex flex-col justify-center items-center text-center border-t lg:border-t-0 lg:border-l border-btn-base-start-secondary">
-            <div className="mb-6 p-4 bg-brand-color1 rounded-lg shadow-sm bg-btn-base-start-secondary">
+          <div className="p-12 md:p-12 lg:w-1/3 bg-plat flex flex-col justify-center items-center text-center border-t lg:border-t-0 lg:border-l-2 border-inferno">
+            <div className="mb-6 pt-4 p-1 shadow-sm bg-white">
               <PublicImage
                 className="pb-2 pt-1"
                 src={iconImage}
                 alt={badgeText}
-                width={120}
-                height={120}
+                width={240}
+                height={240}
               />
             </div>
 
-            <h3 className="text-2xl font-bold text-white mb-3">
-              {ctaTitle || "Ready to Serve?"}
+            <h3 className="text-2xl font-bold text-black mb-3">
+              {ctaTitle || "Volunteer"}
             </h3>
 
-            <p className="text-slate-600 mb-8 text-white leading-relaxed">
+            <p className="text-slate-600 mb-8 leading-relaxed pb-6 border-b-2 border-b-inferno">
               {ctaDescription || "Sign up today to receive updates on volunteer opportunities in your area."}
             </p>
 

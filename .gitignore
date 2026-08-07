@@ -46,3 +46,4 @@ pnpm-debug.log*
 # System Files
 .DS_Store
 *.pem
+textfile.md
