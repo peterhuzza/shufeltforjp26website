@@ -2,7 +2,7 @@ export const getPublicPath = (path: string) => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   // 1. If the path is already an absolute URL (starts with http), return it
-  if (path.startsWith("http")) return path;
+  if (path.startsWith("https")) return path;
 
   // 2. If the path is already absolute for the current domain (starts with /)
   if (path.startsWith("/")) {
