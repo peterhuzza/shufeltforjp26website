@@ -27,7 +27,7 @@ export default function GenPage() {
     "moto": "We Deserve Better."
   },
   "midsectionContent": {
-    "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1158.1777489322867!2d-94.1393751693038!3d36.17367285907689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96b4e855dd46f%3A0x66c30db1f3a79ff!2sTaqueria%20Guanajuato%20Bar%20%26%20Grill!5e0!3m2!1sen!2sus!4v1782920908083!5m2!1sen!2sus",
+    "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539.6612702238431!2d-94.13897202554665!3d36.17353520739165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96b4311470a55%3A0xb8715b6c2fece9a1!2s1102%20S%20Thompson%20St%2C%20Springdale%2C%20AR%2072764!5e1!3m2!1sen!2sus!4v1786136362944!5m2!1sen!2sus",
     "content": [
       "# Visit My Office Hours",
       "I host weekly office hours every Sunday from 2pm-5pm at the Washington County Democratic Headquarters. I invite you to come by to share your concerns and discuss your ideas for our community.",
