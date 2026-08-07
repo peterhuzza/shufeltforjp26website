@@ -24,11 +24,12 @@ export default function GenPage() {
   "campaignName": "Stephanie Shufelt for JP 5",
   "email": "srs@shufeltforjp5.com",
   "facebookUrl": "https://www.facebook.com/shufelt.for.justice.of.the.peace",
-  "instagramUrl": "test",
-  "tiktokUrl": "https://www.tiktok.com/@stephanieshufelt6",
+  "instagramUrl": "",
+  "tiktokUrl": "test",
   "blueskyUrl": "https://bsky.app/profile/libinar.bsky.social",
   "twitterUrl": "test",
-  "volunteerUrl": "https://secure.actblue.com/donate/shufeltforjp5"
+  "volunteerUrl": "",
+  "donationUrl": "https://secure.actblue.com/donate/shufeltforjp5"
 };
   return <Newspage1 {...props} />;
 }
