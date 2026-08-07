@@ -26,7 +26,7 @@ export default function RootLayout({
           <Header
             navLinks={ {'Home': '/', 'About': '/about', 'News': '/news', 'Volunteer': '/volunteer'} }
             candidateName="Stephane Shufelt"
-            donationUrl="https://secure.actblue.com/donate/shufeltforjp5"
+            donationUrl="/donate"
           />
 
           <main className="flex-grow">
@@ -37,11 +37,11 @@ export default function RootLayout({
             candidateName="Stephane Shufelt"
             email="srs@shufeltforjp5.com"
             facebookUrl="https://www.facebook.com/shufelt.for.justice.of.the.peace"
-            instagramUrl=""
-            tiktokUrl="test"
+            instagramUrl="test"
+            tiktokUrl="https://www.tiktok.com/@stephanieshufelt6"
             twitterUrl="test"
             blueskyUrl="https://bsky.app/profile/libinar.bsky.social"
-            volunteerUrl=""
+            volunteerUrl="https://secure.actblue.com/donate/shufeltforjp5"
           />
 
         </div>
