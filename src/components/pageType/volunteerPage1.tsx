@@ -32,7 +32,7 @@ export default function VolunteerPage1({
           {/* LEFT COLUMN: Image content (Hidden on mobile) */}
           <div className="hidden md:block lg:w-2/3 relative h-[500px] md:h-[600px]">
             <PublicImage
-              className="w-full h-full object-cover"
+              className=" object-cover"
               src={imageSrc}
               alt={altImage}
               fill

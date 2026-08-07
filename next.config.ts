@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  basePath: "/shufeltforjp26website", // Add this line
+  //  basePath: "/shufeltforjp5.com", // Add this line
   allowedDevOrigins: ["0.0.0.0"],
 };
 

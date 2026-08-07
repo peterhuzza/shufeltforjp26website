@@ -5,9 +5,7 @@ interface PublicImageProps extends Omit<ImageProps, 'src'> {
   src: string | StaticImageData;
 }
 
-export const PublicImage = ({ src, ...props }: PublicImageProps) => {
-  // If src is StaticImageData (local import), Next.js handles the path automatically.
-  // If src is a string, we apply the getPublicPath logic.
+export const PublicImage = ({ src, width, height, ...props }: PublicImageProps) => {
   const finalSrc = typeof src === 'string' ? getPublicPath(src) : src;
 
   return (

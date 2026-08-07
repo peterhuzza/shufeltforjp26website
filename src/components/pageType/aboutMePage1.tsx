@@ -1,5 +1,6 @@
 import React from "react";
 import Mdfield from '@/components/text/mdfield';
+import { PublicImage } from "@/utils/getImage";
 
 interface AboutPageProps {
   title: string;
@@ -47,11 +48,13 @@ export default function AboutMeEditorial({
               {/* Decorative colored box behind image */}
               <div className="hidden lg:block absolute top-4 left-4 w-full h-full bg-blue-100  -z-10 transform translate-x-2 translate-y-2" />
 
-              <div className="relative shadow-2xl overflow-hidden aspect-[3/4]">
-                <img
+              <div className="relative shadow-2xl overflow-hidden aspect-[3/4] py-5">
+                <PublicImage
                   src={imageSrc}
                   alt={imagealt}
-                  className="object-cover w-full h-full"
+                  fill
+
+                // className="object-cover "
                 />
               </div>
 
