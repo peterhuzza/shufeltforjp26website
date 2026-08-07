@@ -46,13 +46,14 @@ export default function AboutMeEditorial({
             {/* IMAGE COLUMN (Spans 5 columns) */}
             <div className="lg:col-span-5 mt-12 lg:mt-0 relative">
               {/* Decorative colored box behind image */}
-              <div className="hidden lg:block absolute top-4 left-4 w-full h-full bg-blue-100  -z-10 transform translate-x-2 translate-y-2" />
+              <div className="hidden lg:block absolute top-4 left-4 w-full h-full bg-transparent  -z-10 transform translate-x-2 translate-y-2" />
 
-              <div className="relative shadow-2xl overflow-hidden aspect-[3/4]">
+              <div className="relative  overflow-hidden h-[40vh] lg:h-[50vh] w-auto bg-transparent">
                 <PublicImage
                   src={imageSrc}
                   alt={imagealt}
                   fill
+                  className="object-contain shadow-2xl"
 
                 // className="object-cover "
                 />

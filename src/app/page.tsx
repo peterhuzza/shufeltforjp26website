@@ -55,7 +55,9 @@ export default function GenPage() {
       "#### 4. Integrity & Accountability",
       "I will uphold the highest standards of ethics and accountability. My focus will always be on serving the community's interests and upholding the law with honesty and respect.",
       "*Let’s work together to keep Washington County a fair and thriving place to live.*"
-    ]
+    ],
+    "LeftImage": "/about.jpg",
+    "LeftImageAltText": "canadit photo"
   },
   "campaignBadge": "",
   "imageCap": "/",

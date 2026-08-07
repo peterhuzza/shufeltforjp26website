@@ -39,7 +39,6 @@ export default function BannerAboutMe({
         alt={altText}
         fill
         className="object-cover object-center"
-        priority
       />
 
       {/* Subtle Overlay */}

@@ -1,8 +1,7 @@
 import React from 'react';
-import AboutSection from "@/components/midsection/aboutSection";
-import QuickLinksSection from "@/components/subcomponents/quickLinks";
 import BannerAboutMe from "@/components/heroSection/bannerAboutMe";
 import Midsection from "@/components/midsection/midsection";
+import { StaticImageData } from 'next/image';
 // 1. Define the shape of the 'aboutMe' data
 interface AboutMeData {
   moto: string;
@@ -22,10 +21,11 @@ interface AboutMeData {
 
 // 2. Define the shape of the 'midsection' data
 // UPDATED: Added preview1 and preview2 to match Midsection requirements
-
+// TODO: clean up this
 
 interface MidsectionData {
-  topLeft: string | string[];
+  LeftImage: string | StaticImageData;
+  LeftImageAltText: string;
   topRight: string | string[];
   mapSrc: string;
   content: string | string[];
@@ -62,7 +62,7 @@ export default function Home({ aboutMe, midsectionContent }: HomeProps) {
 
       <div className="border-t-2 bg-gray-50 border-inferno">
         {/* 2. ABOUT/AGENDA SECTION */}
-        <Midsection topLeft={midsectionContent.topLeft} topRight={midsectionContent.topRight} mapSrc={midsectionContent.mapSrc} content={midsectionContent.content} />
+        <Midsection LeftImage={midsectionContent.LeftImage} LeftImageAltText={midsectionContent.LeftImageAltText} topRight={midsectionContent.topRight} mapSrc={midsectionContent.mapSrc} content={midsectionContent.content} />
       </div>
       {/* Add more sections here as the site grows */}
     </main>

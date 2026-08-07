@@ -2,16 +2,20 @@
 
 import Textfield from '@/components/text/mdfield';
 import MapEmbed from '@/components/mapEmbed/mapEmbed';
+import { PublicImage } from '@/utils/getImage';
+import { StaticImageData } from 'next/image';
 
 export interface MidsectionProps {
-  topLeft: string | string[];
+  LeftImage: string | StaticImageData;
+  LeftImageAltText: string;
   topRight: string | string[];
   mapSrc: string;
   content: string | string[]; // TODO: clean up this 
 }
 
 export default function Midsection({
-  topLeft,
+  LeftImage,
+  LeftImageAltText,
   topRight,
   mapSrc,
   content
@@ -25,10 +29,10 @@ export default function Midsection({
           md:flex-row (Desktop): Places them side-by-side 
         */}
           <div className="flex flex-col md:flex-row items-stretch">
-            <div className="flex items-center justify-center w-full md:h-[75vh] md:w-1/2 px-5">
-              <Textfield className='' content={topLeft} />
+            <div className="relative flex items-center justify-start bg-transparent w-full md:w-1/2 px-5 overflow-hidden">
+              <PublicImage className='object-center object-contain shadow-2xl' alt={LeftImageAltText} src={LeftImage} fill />
             </div>
-            <div className="flex items-center justify-center w-full md:w-1/2 px-5">
+            <div className="flex w-full md:w-1/2 px-5">
               <Textfield className='' content={topRight} />
             </div>
           </div>
