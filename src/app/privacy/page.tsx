@@ -22,10 +22,10 @@ export default function GenPage() {
   "candidateName": "Stephane Shufelt",
   "facebookUrl": "test",
   "instagramUrl": "test",
-  "tiktokUrl": "test2",
+  "tiktokUrl": "test",
   "blueskyUrl": "blueksystuff",
   "twitterUrl": "test",
-  "volunteerUrl": "test"
+  "volunteerUrl": "https://secure.actblue.com/donate/shufeltforjp5"
 };
   return <Privacypage1 {...props} />;
 }

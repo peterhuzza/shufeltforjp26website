@@ -25,10 +25,10 @@ export default function GenPage() {
   "email": "jamesshufelt@gmail.com",
   "facebookUrl": "test",
   "instagramUrl": "test",
-  "tiktokUrl": "test2",
+  "tiktokUrl": "test",
   "blueskyUrl": "blueksystuff",
   "twitterUrl": "test",
-  "volunteerUrl": "test"
+  "volunteerUrl": "https://secure.actblue.com/donate/shufeltforjp5"
 };
   return <Newspage1 {...props} />;
 }

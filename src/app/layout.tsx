@@ -38,10 +38,10 @@ export default function RootLayout({
             email="jamesshufelt@gmail.com"
             facebookUrl="test"
             instagramUrl="test"
-            tiktokUrl="test2"
+            tiktokUrl="test"
             twitterUrl="test"
             blueskyUrl="blueksystuff"
-            volunteerUrl="test"
+            volunteerUrl="https://secure.actblue.com/donate/shufeltforjp5"
           />
 
         </div>
