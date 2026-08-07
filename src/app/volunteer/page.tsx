@@ -30,11 +30,11 @@ export default function GenPage() {
   "altImage": "Volunteer with us!",
   "candidateName": "Stephane Shufelt",
   "campaignName": "Stephanie Shufelt for JP 5",
-  "email": "jamesshufelt@gmail.com",
-  "facebookUrl": "test",
+  "email": "srs@shufeltforjp5.com",
+  "facebookUrl": "https://www.facebook.com/shufelt.for.justice.of.the.peace",
   "instagramUrl": "test",
   "tiktokUrl": "test",
-  "blueskyUrl": "blueksystuff",
+  "blueskyUrl": "https://bsky.app/profile/libinar.bsky.social",
   "twitterUrl": "test",
   "volunteerUrl": "https://secure.actblue.com/donate/shufeltforjp5"
 };

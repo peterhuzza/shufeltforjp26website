@@ -35,12 +35,12 @@ export default function RootLayout({
 
           <Footer
             candidateName="Stephane Shufelt"
-            email="jamesshufelt@gmail.com"
-            facebookUrl="test"
+            email="srs@shufeltforjp5.com"
+            facebookUrl="https://www.facebook.com/shufelt.for.justice.of.the.peace"
             instagramUrl="test"
             tiktokUrl="test"
             twitterUrl="test"
-            blueskyUrl="blueksystuff"
+            blueskyUrl="https://bsky.app/profile/libinar.bsky.social"
             volunteerUrl="https://secure.actblue.com/donate/shufeltforjp5"
           />
 
