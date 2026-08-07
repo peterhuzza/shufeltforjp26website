@@ -38,7 +38,7 @@ export default function RootLayout({
             email="srs@shufeltforjp5.com"
             facebookUrl="https://www.facebook.com/shufelt.for.justice.of.the.peace"
             instagramUrl=""
-            tiktokUrl="test"
+            tiktokUrl="https://www.tiktok.com/@stephanieshufelt6"
             twitterUrl="test"
             blueskyUrl="https://bsky.app/profile/libinar.bsky.social"
             volunteerUrl=""
