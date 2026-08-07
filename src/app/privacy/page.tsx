@@ -21,11 +21,12 @@ export default function GenPage() {
   "imageCap": "/",
   "candidateName": "Stephane Shufelt",
   "facebookUrl": "https://www.facebook.com/shufelt.for.justice.of.the.peace",
-  "instagramUrl": "test",
-  "tiktokUrl": "https://www.tiktok.com/@stephanieshufelt6",
+  "instagramUrl": "",
+  "tiktokUrl": "test",
   "blueskyUrl": "https://bsky.app/profile/libinar.bsky.social",
   "twitterUrl": "test",
-  "volunteerUrl": "https://secure.actblue.com/donate/shufeltforjp5"
+  "volunteerUrl": "",
+  "donationUrl": "https://secure.actblue.com/donate/shufeltforjp5"
 };
   return <Privacypage1 {...props} />;
 }
