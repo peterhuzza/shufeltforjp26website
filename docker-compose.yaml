@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
       target: dependencies
-    container_name: testnextjsimage 
+    container_name: shufeltforjpwebsiterunner
     working_dir: /app
 
     
