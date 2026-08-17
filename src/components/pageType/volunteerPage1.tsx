@@ -27,7 +27,8 @@ export default function VolunteerPage1({
   return (
     <main className=" justify-center h-[70vh] min-h-screen bg-white flex flex-col">
       <div className="max-w-6xl mx-auto px-4 w-full">
-        <div className="bg-white shadow-lg overflow-hidden flex flex-col lg:flex-row border border-transparent">
+        {/* fix later */}
+        <div className="bg-white shadow-lg overflow-hidden flex flex-col lg:flex-row border border-[#F1F1F1]">
 
           {/* LEFT COLUMN: Image content (Hidden on mobile) */}
           <div className="hidden md:block lg:w-2/3 relative h-[500px] md:h-[600px]">
@@ -40,7 +41,7 @@ export default function VolunteerPage1({
           </div>
 
           {/* RIGHT COLUMN: CTA Sidebar */}
-          <div className="p-12 md:p-12 lg:w-1/3 bg-plat flex flex-col justify-center items-center text-center border-t lg:border-t-0 lg:border-l-2 border-inferno">
+          <div className="p-12 md:p-12 lg:w-1/3 bg-plat flex flex-col justify-center items-center text-center b-plat md:border-t-0 md: border-l-0 lg:border-t-0 lg:border-l-2 lg:border-inferno">
             <div className="mb-6 pt-4 p-1 shadow-sm bg-white">
               <PublicImage
                 className="pb-2 pt-1"
