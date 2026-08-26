@@ -35,7 +35,7 @@
             "aboutMe.secondaryLinkLabel": "Agenda",
             "midsectionContent.mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539.6612702238431!2d-94.13897202554665!3d36.17353520739165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c96b4311470a55%3A0xb8715b6c2fece9a1!2s1102%20S%20Thompson%20St%2C%20Springdale%2C%20AR%2072764!5e1!3m2!1sen!2sus!4v1786136362944!5m2!1sen!2sus",
             "midsectionContent.content": [
-                "# Visit My Office Hours",
+                "# Vist My Office",
                 "I host weekly office hours every Sunday from 2pm-5pm at the Washington County Democratic Headquarters. I invite you to come by to share your concerns and discuss your ideas for our community.",
                 "**Washington County Democratic Headquarters**",
                 "1102 S. Thompson St",
@@ -166,7 +166,29 @@
         "privacy": true,
         "volunteer": false,
         "tab-6": false,
-        "coffee": false
+        "coffee": false,
+        "tab-7": false,
+        "tab-8": false,
+        "tab-9": false
     },
-    "articles": []
+    "articles": [
+        {
+            "slug": "this-is-a-news-aricle",
+            "title": "this is a news aricle",
+            "date": "2026-17-08",
+            "summary": [
+                "this is a test article"
+            ],
+            "content": [
+                "# header1",
+                "## header1",
+                "### header1",
+                "#### header1",
+                "##### header1",
+                "* this is a bullent point",
+                "[about image](about.jpg)",
+                "[mr beast](https://www.youtube.com/watch?v=Af6i6ChAVTw)"
+            ]
+        }
+    ]
 }

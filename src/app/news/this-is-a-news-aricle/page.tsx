@@ -1,33 +1,29 @@
 /**
- * AUTO-GENERATED FILE. Route: /news
+ * AUTO-GENERATED FILE. Route: /news/this-is-a-news-aricle
  */
-import Newspage1 from "@/components/pageType/newsPage1";
+import Newsarticlepage1 from "@/components/pageType/newsArticlePage1";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "News & Updates",
+  title: "this is a news aricle",
 };
 
 export default function GenPage() {
   const props = {
-  "pageTitle": "Announcements",
-  "pageSubtitle": "",
-  "pageImage": "/landscape8726.jpg",
-  "items": [
-    {
-      "key": "this-is-a-news-aricle",
-      "linkHref": "/news/this-is-a-news-aricle",
-      "title": "this is a news aricle",
-      "date": "2026-17-08",
-      "summary": "this is a test article"
-    }
+  "articleTitle": "this is a news aricle",
+  "publishDate": "2026-17-08",
+  "articleSummary": "this is a test article",
+  "articleContent": [
+    "# header1",
+    "## header1",
+    "### header1",
+    "#### header1",
+    "##### header1",
+    "* this is a bullent point",
+    "[about image](about.jpg)",
+    "[mr beast](https://www.youtube.com/watch?v=Af6i6ChAVTw)"
   ],
-  "title": "",
-  "content": [],
-  "imageSrc": "/landscape8726.jpg",
-  "campaignBadge": "",
-  "imagealt": "/",
-  "imageCap": "/",
+  "backLinkText": "Back to News",
   "candidateName": "Stephane Shufelt",
   "campaignName": "Stephanie Shufelt for JP 5",
   "email": "srs@shufeltforjp5.com",
@@ -39,5 +35,5 @@ export default function GenPage() {
   "volunteerUrl": "",
   "donationUrl": "https://secure.actblue.com/donate/shufeltforjp5"
 };
-  return <Newspage1 {...props} />;
+  return <Newsarticlepage1 {...props} />;
 }
