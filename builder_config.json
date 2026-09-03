@@ -171,24 +171,5 @@
         "tab-8": false,
         "tab-9": false
     },
-    "articles": [
-        {
-            "slug": "this-is-a-news-aricle",
-            "title": "this is a news aricle",
-            "date": "2026-17-08",
-            "summary": [
-                "this is a test article"
-            ],
-            "content": [
-                "# header1",
-                "## header1",
-                "### header1",
-                "#### header1",
-                "##### header1",
-                "* this is a bullent point",
-                "[about image](about.jpg)",
-                "[mr beast](https://www.youtube.com/watch?v=Af6i6ChAVTw)"
-            ]
-        }
-    ]
+    "articles": []
 }

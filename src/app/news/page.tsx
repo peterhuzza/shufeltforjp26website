@@ -13,15 +13,7 @@ export default function GenPage() {
   "pageTitle": "Announcements",
   "pageSubtitle": "",
   "pageImage": "/landscape8726.jpg",
-  "items": [
-    {
-      "key": "this-is-a-news-aricle",
-      "linkHref": "/news/this-is-a-news-aricle",
-      "title": "this is a news aricle",
-      "date": "2026-17-08",
-      "summary": "this is a test article"
-    }
-  ],
+  "items": [],
   "title": "",
   "content": [],
   "imageSrc": "/landscape8726.jpg",
