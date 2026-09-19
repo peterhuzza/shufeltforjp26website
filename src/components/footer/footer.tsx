@@ -5,6 +5,7 @@ import { Twinkle_Star } from 'next/font/google';
 
 interface FooterProps {
   candidateName: string;
+  campaignName: string;
   // Make these optional (?) so the site doesn't crash if one is missing
   facebookUrl?: string;
   instagramUrl?: string;
@@ -17,6 +18,7 @@ interface FooterProps {
 
 export default function Footer({
   candidateName,
+  campaignName,
   facebookUrl,
   instagramUrl,
   tiktokUrl,
@@ -97,7 +99,7 @@ export default function Footer({
 
           {/* Copyright / Text */}
           <div className="text-left text-white text-sm">
-            <p>&copy; {new Date().getFullYear()} {candidateName}. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} {candidateName}. All rights reserved paid for by Stephanie Shufelt for JP 5  .</p>
             <div className="mt-2 space-x-4">
               <Button variant='hidden' href="/privacy" className="hover:text-inferno transition">Privacy Policy</Button>
             </div>
