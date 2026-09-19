@@ -97,7 +97,7 @@ export default function Footer({
 
           {/* Copyright / Text */}
           <div className="text-left text-white text-sm">
-            <p>&copy; {new Date().getFullYear()} {candidateName}. All rights reserved paid for by Stephanie Shufelt for JP 5  .</p>
+            <p>&copy; {new Date().getFullYear()} {candidateName}. All rights reserved paid for by Stephanie Shufelt for JP 5.</p>
             <div className="mt-2 space-x-4">
               <Button variant='hidden' href="/privacy" className="hover:text-inferno transition">Privacy Policy</Button>
             </div>
