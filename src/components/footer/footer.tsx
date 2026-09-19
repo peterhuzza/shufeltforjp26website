@@ -5,7 +5,6 @@ import { Twinkle_Star } from 'next/font/google';
 
 interface FooterProps {
   candidateName: string;
-  campaignName: string;
   // Make these optional (?) so the site doesn't crash if one is missing
   facebookUrl?: string;
   instagramUrl?: string;
@@ -18,7 +17,6 @@ interface FooterProps {
 
 export default function Footer({
   candidateName,
-  campaignName,
   facebookUrl,
   instagramUrl,
   tiktokUrl,
