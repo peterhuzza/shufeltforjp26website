@@ -6,22 +6,24 @@ interface VolunteerPageProps {
   badgeText: string;
   imageSrc: string;
   altImage: string;
+  iconImage: string;
+  iconAlt: string;
   ctaTitle: string;
   ctaDescription: string;
   ctaButtonText: string;
   ctaButtonLink: string;
-  iconImage: string;
 }
 
 export default function VolunteerPage1({
   badgeText,
   imageSrc,
   altImage,
+  iconImage,
+  iconAlt,
   ctaTitle,
   ctaDescription,
   ctaButtonText,
   ctaButtonLink,
-  iconImage,
 }: VolunteerPageProps) {
 
   return (
@@ -46,7 +48,7 @@ export default function VolunteerPage1({
               <PublicImage
                 className="pb-2 pt-1"
                 src={iconImage}
-                alt={badgeText}
+                alt={iconAlt}
                 width={240}
                 height={240}
               />

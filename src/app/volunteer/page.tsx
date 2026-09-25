@@ -28,6 +28,7 @@ export default function GenPage() {
   "imagealt": "/",
   "imageCap": "/",
   "altImage": "Volunteer with us!",
+  "iconAlt": "",
   "candidateName": "Stephane Shufelt",
   "campaignName": "Stephanie Shufelt for JP 5",
   "email": "srs@shufeltforjp5.com",
