@@ -17,7 +17,7 @@
         "news": "newsPage1",
         "privacy": "privacyPage1",
         "volunteer": "volunteerPage1",
-        "not": "volunteerContactPage1"
+        "contactusplease": "volunteerContactPage1"
     },
     "route_data": {
         "home": {
@@ -133,7 +133,7 @@
             "ctaTitle": "come and volunteer for us!",
             "ctaDescription": "",
             "ctaButtonText": "",
-            "ctaButtonLink": "",
+            "ctaButtonLink": "contactusplease",
             "iconImage": "emblem.png",
             "pageImage": "",
             "campaignBadge": "",
@@ -142,7 +142,7 @@
             "altImage": "Volunteer with us!",
             "iconAlt": ""
         },
-        "not": {
+        "contactusplease": {
             "pageTitle": "Hello we could use volunteers!",
             "subtitle": "WE NEED PHONE BANKERS!",
             "iconImage": "emblem.png",
@@ -166,7 +166,7 @@
         "3": "news",
         "4": "privacy",
         "5": "volunteer",
-        "6": "not"
+        "6": "contactusplease"
     },
     "hidden": {
         "home": false,
@@ -183,7 +183,8 @@
         "tab-7": false,
         "tab-8": false,
         "tab-9": false,
-        "not": true
+        "not": true,
+        "contactusplease": true
     },
     "articles": []
 }

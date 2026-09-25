@@ -1,11 +1,11 @@
 /**
- * AUTO-GENERATED FILE. Route: /not
+ * AUTO-GENERATED FILE. Route: /contactusplease
  */
 import Volunteercontactpage1 from "@/components/pageType/volunteerContactPage1";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Stephane Shufelt - Not",
+  title: "Stephane Shufelt - Contactusplease",
 };
 
 export default function GenPage() {

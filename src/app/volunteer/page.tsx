@@ -21,7 +21,7 @@ export default function GenPage() {
   "ctaTitle": "come and volunteer for us!",
   "ctaDescription": "",
   "ctaButtonText": "",
-  "ctaButtonLink": "",
+  "ctaButtonLink": "contactusplease",
   "iconImage": "/emblem.png",
   "pageImage": "/",
   "campaignBadge": "",
